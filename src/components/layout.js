@@ -5,14 +5,16 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import * as React from "react"
+import React from 'react';
 import PropTypes from "prop-types"
 
+import Header from "./header"
 import "./layout.css"
 
 const Layout = ({ children }) => {
   return (
     <>
+      <Header siteTitle="Wagner/Swanson Wedding" />
       <div
         style={{
           margin: `0 auto`,
