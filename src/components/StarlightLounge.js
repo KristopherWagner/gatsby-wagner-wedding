@@ -9,6 +9,10 @@ const StarLightDiv = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
+
+    @media only screen and (max-device-width: 1366px) {
+        background-attachment: scroll;
+    }
 `;
 
 export default function StarlightLounge() {
