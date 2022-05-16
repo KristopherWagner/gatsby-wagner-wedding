@@ -1,11 +1,12 @@
 import React from 'react';
 import { withPrefix } from 'gatsby';
+import propTypes from 'prop-types';
 import styled from 'styled-components';
 
 const StarLightDiv = styled.div`
     aspect-ratio: 2309/1536;
     background-attachment: scroll;
-    background-image: url(${withPrefix('/images/starlight_lounge.jpg')});
+    background-image: ${(props) => `url(${withPrefix(props.url)})`};
     background-position-y: 0;
     background-repeat: no-repeat;
     background-size: contain;
@@ -18,6 +19,10 @@ const StarLightDiv = styled.div`
     }
 `;
 
-export default function StarlightLounge() {
-  return <StarLightDiv />;
+export default function Parallax({ url }) {
+  return <StarLightDiv url={url} />;
 }
+
+Parallax.propTypes = {
+  url: propTypes.string.isRequired,
+};
