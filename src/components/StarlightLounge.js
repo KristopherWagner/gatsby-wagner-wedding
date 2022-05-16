@@ -3,15 +3,18 @@ import { withPrefix } from 'gatsby';
 import styled from 'styled-components';
 
 const StarLightDiv = styled.div`
+    aspect-ratio: 2309/1536;
+    background-attachment: scroll;
     background-image: url(${withPrefix('/images/starlight_lounge.jpg')});
-    background-attachment: fixed;
-    background-position: center;
+    background-position-y: 0;
     background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
+    background-size: contain;
 
-    @media only screen and (max-device-width: 1366px) {
-        background-attachment: scroll;
+    @media (min-width: 1366px) {
+      background-attachment: fixed;
+      background-position: center center;
+      background-size: cover;
+      min-height: 100vh;
     }
 `;
 
