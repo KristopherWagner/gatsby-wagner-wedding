@@ -3,7 +3,12 @@ import React from 'react';
 import '../../static/font-awesome/css/all.css';
 import './index.css';
 
-import { EventDetails, Helmet, Parallax } from '../components';
+import {
+  Covid,
+  EventDetails,
+  Helmet,
+  Parallax,
+} from '../components';
 
 export default function IndexPage() {
   return (
@@ -12,6 +17,7 @@ export default function IndexPage() {
       <Parallax image="Starlight Lounge" />
       <EventDetails />
       <Parallax image="Climate Simulator" />
+      <Covid />
     </>
   );
 }
