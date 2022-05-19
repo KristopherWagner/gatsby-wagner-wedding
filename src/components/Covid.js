@@ -25,14 +25,14 @@ const WideCard = styled(Card)`
 export default function Covid() {
   return (
     <Root>
-      <Card icon="fa-solid fa-virus-covid">
+      <Card icon="fa-duotone fa-virus-covid">
         <h2>COVID-19</h2>
         <p>
           We wish we didn&apos;t have to have this conversation but we want to ensure the safety of
           our friends and family as we celebrate together.
         </p>
         <Container>
-          <WideCard icon="fa-solid fa-syringe">
+          <WideCard icon="fa-duotone fa-syringe">
             <h3>Vaccination Requirement</h3>
             <p>
               We are requiring that all guests be fully vaccinated prior to the events.
@@ -47,7 +47,7 @@ export default function Covid() {
               and will look forward to celebrating with you another time.
             </p>
           </WideCard>
-          <NormalCard icon="fa-solid fa-head-side-mask">
+          <NormalCard icon="fa-duotone fa-head-side-mask">
             <h3>Masks</h3>
             <p>
               We plan to comply with local regulations regarding masks, gathering size, and social
