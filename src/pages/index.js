@@ -10,14 +10,18 @@ import {
   Parallax,
 } from '../components';
 
+import { useBackgroundImages } from '../hooks';
+
 export default function IndexPage() {
-  return (
+  const imageURLs = useBackgroundImages();
+
+  return imageURLs != null ? (
     <>
       <Helmet />
-      <Parallax image="Starlight Lounge" />
+      <Parallax url={imageURLs['Starlight Lounge']} />
       <EventDetails />
-      <Parallax image="Climate Simulator" />
+      <Parallax url={imageURLs['Climate Simulator']} />
       <Covid />
     </>
-  );
+  ) : null;
 }
