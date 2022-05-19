@@ -1,2 +1,7 @@
-export const FRUIT_SALAD = '#4CAF50';
-export const MERCURY = '#E5E5E5';
+const MAUVELOUS = '#F48FB1';
+const PARSELY = '#1B5E20';
+const WILD_SAND = '#F5F5F5';
+
+export const PRIMARY = PARSELY;
+export const SECONDARY = MAUVELOUS;
+export const BACKGROUND_LIGHT = WILD_SAND;
