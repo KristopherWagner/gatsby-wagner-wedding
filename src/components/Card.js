@@ -2,10 +2,10 @@ import React from 'react';
 import propTypes from 'prop-types';
 import styled from 'styled-components';
 
-import { FRUIT_SALAD } from './Colors';
+import { PRIMARY } from './Colors';
 
 const Icon = styled.i`
-    color: ${FRUIT_SALAD};
+    color: ${PRIMARY};
     font-size: 36px;
 `;
 

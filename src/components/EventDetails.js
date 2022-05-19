@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Card from './Card';
-import { MERCURY } from './Colors';
+import { BACKGROUND_LIGHT } from './Colors';
 
 const Container = styled.div`
   display: grid;
@@ -10,7 +10,7 @@ const Container = styled.div`
 `;
 
 const Root = styled.div`
-  background-color: ${MERCURY};
+  background-color: ${BACKGROUND_LIGHT};
   padding: 24px;
   text-align: center;
 `;
