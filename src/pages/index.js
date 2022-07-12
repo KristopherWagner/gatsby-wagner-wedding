@@ -8,6 +8,7 @@ import {
   EventDetails,
   Helmet,
   Parallax,
+  Navigation,
 } from '../components';
 
 import { useBackgroundImages } from '../hooks';
@@ -22,6 +23,7 @@ export default function IndexPage() {
       <EventDetails />
       <Parallax url={imageURLs['Climate Simulator']} />
       <Covid />
+      <Navigation />
     </>
   ) : null;
 }
