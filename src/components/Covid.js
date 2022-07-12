@@ -26,7 +26,7 @@ export default function Covid() {
   return (
     <Root>
       <Card icon="fa-duotone fa-virus-covid">
-        <h2>COVID-19</h2>
+        <h2 id="covid">COVID-19</h2>
         <p>
           We wish we didn&apos;t have to have this conversation but we want to ensure the safety of
           our friends and family as we celebrate together.

@@ -19,7 +19,7 @@ export default function EventDetails() {
   return (
     <Root>
       <Card icon="fa-duotone fa-calendar-heart">
-        <h2>Our Wedding Day</h2>
+        <h2 id="details">Our Wedding Day</h2>
         <p>10th March, 2023</p>
         <Container>
           <Card icon="fa-duotone fa-rings-wedding">
