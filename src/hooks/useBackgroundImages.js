@@ -5,25 +5,21 @@ export default function useBackgroundImages() {
       query {
         climateSimulator: file(relativePath: { eq: "climate_simulator.jpg" }) {
           childImageSharp {
-            fluid(quality: 100) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
+            gatsbyImageData(layout: FIXED)
           }
         }
         starlightLounge: file(
           relativePath: { eq: "starlight_lounge.jpg" }
         ) {
           childImageSharp {
-            fluid(quality: 100) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
+            gatsbyImageData(layout: FIXED)
           }
         }
       }
     `);
 
   return {
-    'Climate Simulator': response.climateSimulator.childImageSharp.fluid.srcWebp,
-    'Starlight Lounge': response.starlightLounge.childImageSharp.fluid.srcWebp,
+    'Climate Simulator': response.climateSimulator.childImageSharp.gatsbyImageData.images.sources[0].srcSet.split(' ')[0],
+    'Starlight Lounge': response.starlightLounge.childImageSharp.gatsbyImageData.images.sources[0].srcSet.split(' ')[0],
   };
 }
