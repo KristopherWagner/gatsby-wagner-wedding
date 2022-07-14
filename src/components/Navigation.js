@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 
 import { BACKGROUND_LIGHT } from './Colors';
+import { COVID_ICON, EVENT_DETAILS_ICON } from './Icons';
 import NavigationItem from './NavigationItem';
 
 const Container = styled.div`
@@ -26,13 +27,13 @@ export default function Navigation() {
       <NavigationItem
         expanded={expanded}
         href="#details"
-        icon="fa-duotone fa-calendar-heart"
+        icon={EVENT_DETAILS_ICON}
         title="Event Details"
       />
       <NavigationItem
         expanded={expanded}
         href="#covid"
-        icon="fa-duotone fa-virus-covid"
+        icon={COVID_ICON}
         title="COVID-19"
       />
     </Container>
