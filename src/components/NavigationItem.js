@@ -17,8 +17,12 @@ const Icon = styled.i`
 
 const Text = styled.p`
     color: ${SECONDARY};
-    display: inline;
+    display: none;
     margin: auto 0 auto 5px;
+
+    @media (min-width: 1080px) {
+        display: inline;
+    }
 `;
 
 export default function NavigationItem(props) {
