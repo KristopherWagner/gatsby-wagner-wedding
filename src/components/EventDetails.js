@@ -18,9 +18,9 @@ const Root = styled.div`
 
 export default function EventDetails() {
   return (
-    <Root>
+    <Root id="details">
       <Card icon={EVENT_DETAILS_ICON}>
-        <h2 id="details">Our Wedding Day</h2>
+        <h2>Our Wedding Day</h2>
         <p>10th March, 2023</p>
         <Container>
           <Card icon="fa-duotone fa-rings-wedding">

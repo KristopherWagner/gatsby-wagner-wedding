@@ -25,9 +25,9 @@ const WideCard = styled(Card)`
 
 export default function Covid() {
   return (
-    <Root>
+    <Root id="covid">
       <Card icon={COVID_ICON}>
-        <h2 id="covid">COVID-19</h2>
+        <h2>COVID-19</h2>
         <p>
           We wish we didn&apos;t have to have this conversation but we want to ensure the safety of
           our friends and family as we celebrate together.
