@@ -1,11 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 
-import { BACKGROUND_LIGHT, SECONDARY } from './Colors';
-
-const Button = styled.a`
-    display: block;
-`;
+import { BACKGROUND_LIGHT } from './Colors';
+import NavigationItem from './NavigationItem';
 
 const Container = styled.div`
     background-color: ${BACKGROUND_LIGHT};
@@ -15,24 +12,29 @@ const Container = styled.div`
 
     position: fixed;
     top: 5px;
-    right: 5px;
-`;
-
-const Icon = styled.i`
-    color: ${SECONDARY};
-    font-size: 32px;
-    margin: 5px;
+    right: 10px;
 `;
 
 export default function Navigation() {
+  const [expanded, setExpanded] = useState(false);
+
   return (
-    <Container>
-      <Button href="#details" title="Jump to event details">
-        <Icon className="fa-duotone fa-calendar-heart" />
-      </Button>
-      <Button href="#covid" title="Jump to COVID-19 guidance">
-        <Icon className="fa-duotone fa-virus-covid" />
-      </Button>
+    <Container
+      onMouseEnter={() => setExpanded(true)}
+      onMouseLeave={() => setExpanded(false)}
+    >
+      <NavigationItem
+        expanded={expanded}
+        href="#details"
+        icon="fa-duotone fa-calendar-heart"
+        title="Event Details"
+      />
+      <NavigationItem
+        expanded={expanded}
+        href="#covid"
+        icon="fa-duotone fa-virus-covid"
+        title="COVID-19"
+      />
     </Container>
   );
 }
