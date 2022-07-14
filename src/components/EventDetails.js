@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import Card from './Card';
 import { BACKGROUND_LIGHT } from './Colors';
+import { EVENT_DETAILS_ICON } from './Icons';
 
 const Container = styled.div`
   display: grid;
@@ -18,7 +19,7 @@ const Root = styled.div`
 export default function EventDetails() {
   return (
     <Root>
-      <Card icon="fa-duotone fa-calendar-heart">
+      <Card icon={EVENT_DETAILS_ICON}>
         <h2 id="details">Our Wedding Day</h2>
         <p>10th March, 2023</p>
         <Container>
