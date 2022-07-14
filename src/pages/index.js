@@ -3,6 +3,9 @@ import React from 'react';
 import '../../static/font-awesome/css/all.css';
 import './index.css';
 
+import SL from '../../static/images/starlight_lounge.jpg';
+import CL from '../../static/images/climate_simulator.jpg';
+
 import {
   Covid,
   EventDetails,
@@ -19,9 +22,9 @@ export default function IndexPage() {
   return imageURLs != null ? (
     <>
       <Helmet />
-      <Parallax url={imageURLs['Starlight Lounge']} />
+      <Parallax url={SL} />
       <EventDetails />
-      <Parallax url={imageURLs['Climate Simulator']} />
+      <Parallax url={CL} />
       <Covid />
       <Navigation />
     </>
