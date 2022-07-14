@@ -21,7 +21,7 @@ const Text = styled.p`
     margin: auto 0 auto 5px;
 
     @media (min-width: 1080px) {
-        display: inline;
+        display: ${(props) => (props.expanded ? 'inline' : 'none')};
     }
 `;
 
@@ -33,7 +33,7 @@ export default function NavigationItem(props) {
   return (
     <Button href={href}>
       <Icon className={icon} />
-      {expanded && <Text>{` ${title}`}</Text>}
+      <Text expanded={expanded}>{` ${title}`}</Text>
     </Button>
   );
 }
