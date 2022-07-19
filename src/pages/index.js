@@ -7,8 +7,8 @@ import {
   Covid,
   EventDetails,
   Helmet,
-  Parallax,
   Navigation,
+  Parallax,
 } from '../components';
 
 import { useBackgroundImages } from '../hooks';
@@ -19,11 +19,11 @@ export default function IndexPage() {
   return imageURLs != null ? (
     <>
       <Helmet />
+      <Navigation />
       <Parallax url={imageURLs['Starlight Lounge']} />
       <EventDetails />
       <Parallax url={imageURLs['Climate Simulator']} />
       <Covid />
-      <Navigation />
     </>
   ) : null;
 }
