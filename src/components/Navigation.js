@@ -4,15 +4,18 @@ import styled from 'styled-components';
 import { BACKGROUND_LIGHT, PRIMARY } from './Colors';
 
 const Container = styled.div`
-    background-color: ${PRIMARY};
+    background-color: ${(props) => (props.expanded ? 'unset' : PRIMARY)};
     border-radius: 999px;
-    box-shadow: 0px 3px 6px black;
+    box-shadow: ${(props) => (props.expanded ? 'none' : '0px 3px 6px black')};
     opacity: 0.8;
 
     position: fixed;
     top: 5px;
     right: 10px;
-    z-index: 1;
+    z-index: 2;
+
+    transition: 0.5s;
+    transition-delay: ${(props) => (props.expanded ? '0.5s' : '0')};
 `;
 
 const Icon = styled.i`
@@ -25,6 +28,22 @@ const Icon = styled.i`
   vertical-align: middle;
 `;
 
+const Overlay = styled.div`
+  height: 100vh;
+  width: ${(props) => (props.expanded ? '100vw' : '0vw')};
+
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+
+  background-color: ${PRIMARY};
+  opacity: 0.8;
+  overflow-x: hidden;
+  transition: 0.5s;
+  transition-delay: ${(props) => (props.expanded ? '0' : '0.5s')};
+`;
+
 export default function Navigation() {
   const [expanded, setExpanded] = useState(false);
 
@@ -33,13 +52,17 @@ export default function Navigation() {
   const toggle = () => setExpanded(!expanded);
 
   return (
-    <Container
-      onClick={toggle}
-      onKeyDown={toggle}
-      role="button"
-      tabIndex={0}
-    >
-      {icon}
-    </Container>
+    <>
+      <Container
+        expanded={expanded}
+        onClick={toggle}
+        onKeyDown={toggle}
+        role="button"
+        tabIndex={0}
+      >
+        {icon}
+      </Container>
+      <Overlay expanded={expanded} />
+    </>
   );
 }
