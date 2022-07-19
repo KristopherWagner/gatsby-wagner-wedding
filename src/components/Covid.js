@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 import Card from './Card';
 import { BACKGROUND_LIGHT } from './Colors';
-import { COVID_ICON } from './Icons';
 
 const Container = styled.div`
   display: grid;
@@ -26,7 +25,7 @@ const WideCard = styled(Card)`
 export default function Covid() {
   return (
     <Root id="covid">
-      <Card icon={COVID_ICON}>
+      <Card icon="fa-duotone fa-virus-covid">
         <h2>COVID-19</h2>
         <p>
           We wish we didn&apos;t have to have this conversation but we want to ensure the safety of
