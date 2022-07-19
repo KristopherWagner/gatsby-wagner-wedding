@@ -8,7 +8,7 @@ const Button = styled.div`
     border-radius: 999px;
     box-shadow: ${(props) => (props.expanded ? 'none' : '0px 3px 6px black')};
     cursor: pointer;
-    opacity: ${(props) => (props.expanded ? '1' : '0.8')};
+    opacity: ${(props) => (props.expanded ? '0.95' : '0.8')};
 
     position: fixed;
     top: 5px;
@@ -52,6 +52,7 @@ const Overlay = styled.div`
   left: 0;
 
   background-color: ${PRIMARY};
+  opacity: 0.95;
   overflow-x: hidden;
   transition: 0.5s;
   transition-delay: ${(props) => (props.expanded ? '0' : '0.5s')};
