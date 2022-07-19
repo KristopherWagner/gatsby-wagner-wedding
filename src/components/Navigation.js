@@ -3,12 +3,12 @@ import styled from 'styled-components';
 
 import { BACKGROUND_LIGHT, PRIMARY, SECONDARY } from './Colors';
 
-const Container = styled.div`
+const Button = styled.div`
     background-color: ${(props) => (props.expanded ? 'unset' : PRIMARY)};
     border-radius: 999px;
     box-shadow: ${(props) => (props.expanded ? 'none' : '0px 3px 6px black')};
     cursor: pointer;
-    opacity: 0.8;
+    opacity: ${(props) => (props.expanded ? '1' : '0.8')};
 
     position: fixed;
     top: 5px;
@@ -52,7 +52,6 @@ const Overlay = styled.div`
   left: 0;
 
   background-color: ${PRIMARY};
-  opacity: 0.8;
   overflow-x: hidden;
   transition: 0.5s;
   transition-delay: ${(props) => (props.expanded ? '0' : '0.5s')};
@@ -75,7 +74,7 @@ export default function Navigation() {
 
   return (
     <>
-      <Container
+      <Button
         expanded={expanded}
         onClick={toggle}
         onKeyDown={toggle}
@@ -83,7 +82,7 @@ export default function Navigation() {
         tabIndex={0}
       >
         {icon}
-      </Container>
+      </Button>
       <Overlay expanded={expanded}>
         <OverlayContent>
           <Link href="#details" onClick={closeOverlay}>Details</Link>
