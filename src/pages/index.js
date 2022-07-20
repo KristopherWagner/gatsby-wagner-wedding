@@ -1,6 +1,9 @@
 import React from 'react';
 
-import '../font-awesome/css/all.css';
+import '../font-awesome/css/fontawesome.min.css';
+import '../font-awesome/css/brands.min.css';
+import '../font-awesome/css/duotone.min.css';
+import '../font-awesome/css/solid.min.css';
 import './index.css';
 
 import {
