@@ -76,7 +76,7 @@ export default function Navigation() {
   return (
     <>
       <Button
-        ariaLabel={expanded ? 'Close navigation' : 'Open navigation'}
+        aria-label={expanded ? 'Close navigation' : 'Open navigation'}
         expanded={expanded}
         onClick={toggle}
         onKeyDown={toggle}
@@ -88,14 +88,14 @@ export default function Navigation() {
       <Overlay expanded={expanded}>
         <OverlayContent>
           <Link
-            ariaLabel="Go to event details"
+            aria-label="Go to event details"
             href="#details"
             onClick={closeOverlay}
           >
             Details
           </Link>
           <Link
-            ariaLabel="Go to COVID guidance"
+            aria-label="Go to COVID guidance"
             href="#covid"
             onClick={closeOverlay}
           >
