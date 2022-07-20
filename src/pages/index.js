@@ -14,8 +14,8 @@ import {
   Parallax,
 } from '../components';
 
-import StarlightLounge from '../images/starlight_lounge.jpg';
-import ClimateSimulator from '../images/climate_simulator.jpg';
+import StarlightLounge from '../images/starlight_lounge.webp';
+import ClimateSimulator from '../images/climate_simulator.webp';
 
 export default function IndexPage() {
   return (
