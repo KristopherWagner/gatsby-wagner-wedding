@@ -9,13 +9,6 @@ module.exports = {
     'gatsby-plugin-styled-components',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-image',
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'images',
-        path: `${__dirname}/static/images`,
-      },
-    },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
@@ -26,7 +19,7 @@ module.exports = {
         start_url: '/',
         background_color: '#663399',
         display: 'minimal-ui',
-        icon: 'static/images/bells.svg',
+        icon: 'src/images/bells.svg',
       },
     },
     {

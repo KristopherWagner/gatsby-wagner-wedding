@@ -14,19 +14,18 @@ import {
   Parallax,
 } from '../components';
 
-import { useBackgroundImages } from '../hooks';
+import StarlightLounge from '../images/starlight_lounge.jpg';
+import ClimateSimulator from '../images/climate_simulator.jpg';
 
 export default function IndexPage() {
-  const imageURLs = useBackgroundImages();
-
-  return imageURLs != null ? (
+  return (
     <>
       <Helmet />
       <Navigation />
-      <Parallax url={imageURLs['Starlight Lounge']} />
+      <Parallax url={StarlightLounge} />
       <EventDetails />
-      <Parallax url={imageURLs['Climate Simulator']} />
+      <Parallax url={ClimateSimulator} />
       <Covid />
     </>
-  ) : null;
+  );
 }
