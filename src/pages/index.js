@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../../static/font-awesome/css/all.css';
+import '../font-awesome/css/all.css';
 import './index.css';
 
 import {
