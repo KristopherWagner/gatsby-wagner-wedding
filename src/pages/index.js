@@ -12,6 +12,7 @@ import {
   Helmet,
   Navigation,
   Parallax,
+  Travel,
 } from '../components';
 
 import StarlightLounge from '../images/starlight_lounge.webp';
@@ -26,6 +27,7 @@ export default function IndexPage() {
       <EventDetails />
       <Parallax url={ClimateSimulator} />
       <Covid />
+      <Travel />
     </>
   );
 }

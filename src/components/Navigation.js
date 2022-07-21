@@ -102,8 +102,8 @@ export default function Navigation() {
             COVID-19
           </Link>
           <Link
-            aria-label="Go to travel page"
-            href="travel"
+            aria-label="Go to travel details"
+            href="#travel"
             onClick={closeOverlay}
           >
             Travel/Accommodations
