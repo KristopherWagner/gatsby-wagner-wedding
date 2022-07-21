@@ -89,17 +89,24 @@ export default function Navigation() {
         <OverlayContent>
           <Link
             aria-label="Go to event details"
-            href="#details"
+            href="/#details"
             onClick={closeOverlay}
           >
             Details
           </Link>
           <Link
             aria-label="Go to COVID guidance"
-            href="#covid"
+            href="/#covid"
             onClick={closeOverlay}
           >
             COVID-19
+          </Link>
+          <Link
+            aria-label="Go to travel page"
+            href="travel"
+            onClick={closeOverlay}
+          >
+            Travel/Accommodations
           </Link>
         </OverlayContent>
       </Overlay>
