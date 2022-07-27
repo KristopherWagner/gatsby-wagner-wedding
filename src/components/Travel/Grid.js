@@ -3,10 +3,11 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const StyledGrid = styled.div`
-  display: grid;
-  grid-template-columns: ${
-  (props) => (props.columns === 3 ? '33% 33% 33%' : '50% 50%')
-};
+  @media (min-width: 1080px) {
+    display: grid;
+    grid-template-columns: ${(props) => (
+    props.columns === 3 ? '33% 33% 33%' : '50% 50%')};
+  }
 `;
 
 export default function Grid(props) {
