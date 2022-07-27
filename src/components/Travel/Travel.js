@@ -32,7 +32,7 @@ export default function Travel() {
         <p>
           Our entire wedding will be contained within the Walt Disney World Resort.
           We highly recommend you fly into the Orlando International Airport (MCO)
-          and stay on-property at any of the numerous Walt Disney.
+          and stay on-property at any of the numerous Walt Disney World Resort hotels.
         </p>
         <h3>Travel</h3>
         <Grid columns={2}>
