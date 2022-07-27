@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import Card from '../Card';
 import Grid from './Grid';
 import Link from './Link';
 
@@ -22,7 +23,7 @@ export default function Activities() {
         you can also reach out to us directly for any recommendations!
       </p>
       <Grid>
-        <div>
+        <Card icon="fa-duotone fa-pizza-slice">
           <h4>Eat</h4>
           <List>
             <Underlined>EPCOT</Underlined>
@@ -35,8 +36,8 @@ export default function Activities() {
             <Underlined>Disney Springs</Underlined>
             <li>City Works Eatery & Pour House, Disney Springs</li>
           </List>
-        </div>
-        <div>
+        </Card>
+        <Card icon="fa-duotone fa-beer-mug">
           <h4>Drink</h4>
           <List>
             <Underlined>Disney&apos;s Boardwalk</Underlined>
@@ -85,8 +86,8 @@ export default function Activities() {
               />
             </li>
           </List>
-        </div>
-        <div>
+        </Card>
+        <Card icon="fa-duotone fa-roller-coaster">
           <h4>Play</h4>
           <List>
             <li>EPCOT</li>
@@ -96,7 +97,7 @@ export default function Activities() {
             <li>Typhoon Lagoon</li>
             <li>Disney Springs</li>
           </List>
-        </div>
+        </Card>
       </Grid>
     </>
   );
