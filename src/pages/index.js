@@ -16,7 +16,7 @@ import {
   Travel,
 } from '../components';
 
-import Bridge from '../images/bridge.webp';
+import Christmas from '../images/christmas.webp';
 import ClimateSimulator from '../images/climate_simulator.webp';
 import StarlightLounge from '../images/starlight_lounge.webp';
 
@@ -29,7 +29,7 @@ export default function IndexPage() {
       <EventDetails />
       <Parallax url={ClimateSimulator} />
       <Travel />
-      <Parallax url={Bridge} />
+      <Parallax url={Christmas} />
       <Covid />
     </>
   );
