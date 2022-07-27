@@ -8,8 +8,8 @@ import { NORWAY, PRIMARY } from '../Colors';
 import Link from './Link';
 import Grid from './Grid';
 
-const HorizontalRule = styled.hr`
-  color: ${PRIMARY};
+const HorizontalRule = styled.div`
+  border: 1px solid ${PRIMARY};
   margin: 16px auto;
   width: 75%;
 `;
