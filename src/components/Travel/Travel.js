@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Accommodations from './Accommodations';
+import Activities from './Activities';
 import Card from '../Card';
 import { NORWAY } from '../Colors';
 import Link from './Link';
@@ -44,6 +45,7 @@ export default function Travel() {
           .
         </p>
         <Accommodations />
+        <Activities />
       </Card>
     </Root>
   );

@@ -1,12 +1,7 @@
 import React from 'react';
-import styled from 'styled-components';
 
+import Grid from './Grid';
 import Link from './Link';
-
-const Grid = styled.div`
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-`;
 
 export default function Accommodations() {
   return (
