@@ -92,14 +92,7 @@ export default function Navigation() {
             href="/#details"
             onClick={closeOverlay}
           >
-            Details
-          </Link>
-          <Link
-            aria-label="Go to COVID guidance"
-            href="/#covid"
-            onClick={closeOverlay}
-          >
-            COVID-19
+            Event
           </Link>
           <Link
             aria-label="Go to travel details"
@@ -107,6 +100,13 @@ export default function Navigation() {
             onClick={closeOverlay}
           >
             Travel/Accommodations
+          </Link>
+          <Link
+            aria-label="Go to COVID guidance"
+            href="/#covid"
+            onClick={closeOverlay}
+          >
+            COVID-19
           </Link>
         </OverlayContent>
       </Overlay>
