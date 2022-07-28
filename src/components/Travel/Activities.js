@@ -29,10 +29,12 @@ export default function Activities() {
             <Underlined>EPCOT</Underlined>
             <li>Teppan Edo</li>
             <li>International Flower & Garden Festival</li>
-            <br />
+          </List>
+          <List>
             <Underlined>Animal Kingdom</Underlined>
             <li>Satu&apos;li Canteen, Disney&apos;s Animal Kingdom</li>
-            <br />
+          </List>
+          <List>
             <Underlined>Disney Springs</Underlined>
             <li>City Works Eatery & Pour House, Disney Springs</li>
           </List>
@@ -47,7 +49,8 @@ export default function Activities() {
                 text="Jellyrolls"
               />
             </li>
-            <br />
+          </List>
+          <List>
             <Underlined>The Polynesian Village Resort</Underlined>
             <li>
               <Link
@@ -55,7 +58,8 @@ export default function Activities() {
                 text="Trader Sam's Grog Grotto"
               />
             </li>
-            <br />
+          </List>
+          <List>
             <Underlined>Disney Springs</Underlined>
             <li>
               <Link
@@ -69,7 +73,8 @@ export default function Activities() {
                 text="City Works Eatery & Pour House"
               />
             </li>
-            <br />
+          </List>
+          <List>
             <Underlined>Disney&apos;s Hollywood Studios</Underlined>
             <li>
               <Link
@@ -77,7 +82,8 @@ export default function Activities() {
                 text="Oga's Cantina"
               />
             </li>
-            <br />
+          </List>
+          <List>
             <Underlined>EPCOT</Underlined>
             <li>
               <Link
