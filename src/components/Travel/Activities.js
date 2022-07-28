@@ -10,8 +10,8 @@ const List = styled.ul`
     padding: 0;
 `;
 
-const Underlined = styled.li`
-    text-decoration: underline;
+const Bold = styled.li`
+    font-weight: bold;
 `;
 
 export default function Activities() {
@@ -26,23 +26,23 @@ export default function Activities() {
         <Card icon="fa-duotone fa-pizza-slice">
           <h4>Eat</h4>
           <List>
-            <Underlined>EPCOT</Underlined>
+            <Bold>EPCOT</Bold>
             <li>Teppan Edo</li>
             <li>International Flower & Garden Festival</li>
           </List>
           <List>
-            <Underlined>Animal Kingdom</Underlined>
+            <Bold>Animal Kingdom</Bold>
             <li>Satu&apos;li Canteen, Disney&apos;s Animal Kingdom</li>
           </List>
           <List>
-            <Underlined>Disney Springs</Underlined>
+            <Bold>Disney Springs</Bold>
             <li>City Works Eatery & Pour House, Disney Springs</li>
           </List>
         </Card>
         <Card icon="fa-duotone fa-beer-mug">
           <h4>Drink</h4>
           <List>
-            <Underlined>Disney&apos;s Boardwalk</Underlined>
+            <Bold>Disney&apos;s Boardwalk</Bold>
             <li>
               <Link
                 href="https://disneyworld.disney.go.com/entertainment/boardwalk/jellyrolls/"
@@ -51,7 +51,7 @@ export default function Activities() {
             </li>
           </List>
           <List>
-            <Underlined>The Polynesian Village Resort</Underlined>
+            <Bold>The Polynesian Village Resort</Bold>
             <li>
               <Link
                 href="https://disneyworld.disney.go.com/dining/polynesian-resort/trader-sams-grog-grotto/"
@@ -60,7 +60,7 @@ export default function Activities() {
             </li>
           </List>
           <List>
-            <Underlined>Disney Springs</Underlined>
+            <Bold>Disney Springs</Bold>
             <li>
               <Link
                 href="https://disneyworld.disney.go.com/dining/disney-springs/jock-lindseys-hangar-bar/"
@@ -75,7 +75,7 @@ export default function Activities() {
             </li>
           </List>
           <List>
-            <Underlined>Disney&apos;s Hollywood Studios</Underlined>
+            <Bold>Disney&apos;s Hollywood Studios</Bold>
             <li>
               <Link
                 href="https://disneyworld.disney.go.com/dining/hollywood-studios/ogas-cantina/"
@@ -84,7 +84,7 @@ export default function Activities() {
             </li>
           </List>
           <List>
-            <Underlined>EPCOT</Underlined>
+            <Bold>EPCOT</Bold>
             <li>
               <Link
                 href="https://disneyworld.disney.go.com/events-tours/epcot/epcot-international-flower-and-garden-festival/"
