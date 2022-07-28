@@ -3,7 +3,7 @@ module.exports = {
     title: 'Wagner/Swanson Wedding',
     description: 'Wedding website for Kristopher Wagner and Shannon Swanson',
     author: '@KristopherWagner',
-    siteUrl: 'https://gatsbystarterdefaultsource.gatsbyjs.io/',
+    siteUrl: 'https://swansonwagner.wedding/',
   },
   plugins: [
     'gatsby-plugin-styled-components',

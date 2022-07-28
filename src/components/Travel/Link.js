@@ -5,11 +5,11 @@ import styled from 'styled-components';
 import { BACKGROUND_LIGHT, PRIMARY } from '../Colors';
 
 const StyledLink = styled.a`
-    color: ${BACKGROUND_LIGHT};
+    color: ${PRIMARY};
     text-decoration: none;
 
     &:hover {
-        color: ${PRIMARY};
+        color: ${BACKGROUND_LIGHT};
     }
 `;
 
