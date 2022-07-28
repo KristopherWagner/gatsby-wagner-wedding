@@ -43,14 +43,15 @@ export default function Travel() {
               airport and provides several transportation options to the Walt Disney World Resort.
               If you choose to fly into MCO and are staying at a WDW Resort hotel,
               you can choose to book transportation direct to your hotel through
+              {' '}
               <Link
                 href="https://www.mearsconnect.com/?AspxAutoDetectCookieSupport=1"
-                text=" Mears Connect "
+                text="Mears Connect"
               />
-              or
+              {' or '}
               <Link
                 href="https://sunshineflyer.com/?gclid=CjwKCAjwrNmWBhA4EiwAHbjEQIiT6zREtLgWfB-D2zHofMaAqNLMC3_6_5L-XpLcFISs9Cc1YhlJGBoC8ogQAvD_BwE"
-                text=" The Sunshine Flyer"
+                text="The Sunshine Flyer"
               />
               .
             </p>
@@ -62,22 +63,24 @@ export default function Travel() {
               and Tampa International Airport (TPA), however these are further away and will
               require a rental car or taxi. Prefer to travel by train? You can bring your car on
               the
+              {' '}
               <Link
                 href="https://www.amtrak.com/auto-train"
-                text=" Amtrack Autotrain "
+                text="Amtrack Autotrain"
               />
+              {' '}
               from Lorton, VA to Sanford, FL.
             </p>
           </div>
         </Grid>
         <p>
           <Icon className="fa-duotone fa-comment-question" />
-          {' Need help? Feel free to'}
+          {' Need help? Feel free to '}
           <Link
             href="mailto:kmwagner91@gmail.com"
-            text=" email the groom "
+            text="email the groom"
           />
-          for assistance!
+          {' for assistance!'}
         </p>
         <HorizontalRule />
         <Accommodations />
