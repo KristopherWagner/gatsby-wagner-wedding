@@ -1,9 +1,11 @@
  .flip-card {
     background-color: transparent;
-    width: 300px;
+    display: inline-block;
+    margin: 4px;
+    perspective: 1000px;
+
     height: 300px;
-    border: 1px solid #f1f1f1;
-    perspective: 1000px; 
+    width: 300px;
   }
   
   .flip-card-inner {
@@ -33,7 +35,10 @@
   }
   
   .flip-card-back {
-    background-color: dodgerblue;
-    color: white;
+    background-color: #9DB89F;
     transform: rotateY(180deg);
-  } 
+  }
+
+  .memory {
+    padding: 4px;
+  }

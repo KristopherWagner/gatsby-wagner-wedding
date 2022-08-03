@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import './FlipCard.css';
 
 export default function FlipCard(props) {
-  const { image } = props;
+  const { image, memory, name } = props;
 
   return (
     <div className="flip-card">
@@ -13,9 +13,8 @@ export default function FlipCard(props) {
           {image}
         </div>
         <div className="flip-card-back">
-          <h1>John Doe</h1>
-          <p>Architect & Engineer</p>
-          <p>We love that guy</p>
+          <h3>{name}</h3>
+          <p className="memory">{memory}</p>
         </div>
       </div>
     </div>
@@ -24,4 +23,6 @@ export default function FlipCard(props) {
 
 FlipCard.propTypes = {
   image: PropTypes.node.isRequired,
+  memory: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
 };
