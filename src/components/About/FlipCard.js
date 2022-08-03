@@ -50,12 +50,13 @@ export default function FlipCard(props) {
   const [flipped, setFlipped] = useState(false);
 
   return (
-    <Root>
+    <Root
+      onMouseEnter={() => setFlipped(true)}
+      onMouseLeave={() => setFlipped(false)}
+    >
       <Container
         flipped={flipped}
         onClick={() => setFlipped(!flipped)}
-        onMouseEnter={() => setFlipped(true)}
-        onMouseLeave={() => setFlipped(false)}
       >
         <Front>
           {image}
