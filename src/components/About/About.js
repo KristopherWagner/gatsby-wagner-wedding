@@ -8,8 +8,8 @@ import FlipCard from './FlipCard';
 
 const SHARED_PROPS = {
   loading: 'lazy',
-  height: '300px',
-  widht: '300px',
+  height: 300,
+  widht: 300,
 };
 
 const Casper = <StaticImage alt="Casper" src="../../images/Casper.webp" {...SHARED_PROPS} />;
