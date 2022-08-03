@@ -3,7 +3,7 @@ import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
 
-import { BACKGROUND_LIGHT } from '../Colors';
+import { BRIDESMAID } from '../Colors';
 import FlipCard from './FlipCard';
 
 const SHARED_PROPS = {
@@ -40,7 +40,7 @@ const CardContainer = styled.div`
 `;
 
 const Root = styled.div`
-  background-color: ${BACKGROUND_LIGHT};
+  background-color: ${BRIDESMAID};
   padding: 24px 0px;
   text-align: center;
 `;
