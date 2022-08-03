@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
@@ -24,9 +24,7 @@ const Container = styled.div`
   height: 100%;
   width: 100%;
 
-  &:hover {
-    transform: rotateY(180deg);
-  }
+  transform: ${({ flipped }) => (flipped ? 'rotateY(180deg)' : '')};
 `;
 
 const Front = styled.div`
@@ -49,10 +47,15 @@ const Memory = styled.p`
 
 export default function FlipCard(props) {
   const { image, memory, name } = props;
+  const [flipped, setFlipped] = useState(false);
 
   return (
     <Root>
-      <Container>
+      <Container
+        flipped={flipped}
+        onMouseEnter={() => setFlipped(true)}
+        onMouseLeave={() => setFlipped(false)}
+      >
         <Front>
           {image}
         </Front>
