@@ -108,6 +108,13 @@ export default function Navigation() {
           >
             COVID-19
           </Link>
+          <Link
+            aria-label="Go to the about us section"
+            href="/#about"
+            onClick={closeOverlay}
+          >
+            About Us
+          </Link>
         </OverlayContent>
       </Overlay>
     </>

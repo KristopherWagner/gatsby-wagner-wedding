@@ -8,6 +8,7 @@ import '../font-awesome/css/solid.min.css';
 import './index.css';
 
 import {
+  About,
   Covid,
   EventDetails,
   Helmet,
@@ -31,6 +32,7 @@ export default function IndexPage() {
       <Travel />
       <Parallax url={Christmas} />
       <Covid />
+      <About />
     </>
   );
 }

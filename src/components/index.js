@@ -1,3 +1,4 @@
+export { default as About } from './About';
 export { default as Covid } from './Covid';
 export { default as EventDetails } from './EventDetails';
 export { default as Helmet } from './Helmet';
