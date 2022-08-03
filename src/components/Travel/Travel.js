@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Accommodations from './Accommodations';
 import Activities from './Activities';
 import Card from '../Card';
-import { NORWAY, PRIMARY } from '../Colors';
+import { FRINGY_FLOWER, PRIMARY } from '../Colors';
 import Link from './Link';
 import Grid from './Grid';
 
@@ -19,7 +19,7 @@ const Icon = styled.i`
 `;
 
 const Root = styled.div`
-    background-color: ${NORWAY};
+    background-color: ${FRINGY_FLOWER};
     padding: 24px;
     text-align: center;
 `;

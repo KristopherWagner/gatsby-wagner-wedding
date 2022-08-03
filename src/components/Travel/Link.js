@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import { BACKGROUND_LIGHT } from '../Colors';
+import { STROMBOLI } from '../Colors';
 
 const StyledLink = styled.a`
     color: black;
@@ -10,7 +10,7 @@ const StyledLink = styled.a`
     text-decoration-line: underline;
 
     &:hover {
-        color: ${BACKGROUND_LIGHT};
+        color: ${STROMBOLI};
     }
 `;
 
