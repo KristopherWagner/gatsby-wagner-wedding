@@ -8,7 +8,8 @@ export default function FlipCard(props) {
 
   return (
     <div className="flip-card">
-      <div className="flip-card-inner">
+      {/* eslint-disable-next-line jsx-a11y/no-noninteractive-tabindex */}
+      <div className="flip-card-inner" tabIndex={0}>
         <div className="flip-card-front">
           {image}
         </div>
