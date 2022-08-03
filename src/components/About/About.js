@@ -17,6 +17,7 @@ const Ella = <StaticImage alt="Ella" src="../../images/Ella.webp" {...SHARED_PRO
 const Jesse = <StaticImage alt="Jesse" src="../../images/Jesse.webp" {...SHARED_PROPS} />;
 const Jordan = <StaticImage alt="Jordan" src="../../images/Jordan.webp" {...SHARED_PROPS} />;
 const Kelly = <StaticImage alt="Kelly" src="../../images/Kelly.webp" {...SHARED_PROPS} />;
+const Nick = <StaticImage alt="Nick" src="../../images/Nick.webp" {...SHARED_PROPS} />;
 
 const CardContainer = styled.div`
   display: grid;
@@ -79,6 +80,11 @@ export default function About() {
           image={Kelly}
           memory="Feeling like I'm flying on the Avatar Flight of Passage ride in Pandora."
           name="Kelly Swanson-Obando"
+        />
+        <FlipCard
+          image={Nick}
+          memory="Waking up every morning at the Animal Kingdom Lodge and seeing the animals walk outside my room."
+          name="Nicholas Stuter"
         />
       </CardContainer>
     </Root>
