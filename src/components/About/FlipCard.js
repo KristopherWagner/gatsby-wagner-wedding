@@ -53,6 +53,7 @@ export default function FlipCard(props) {
     <Root>
       <Container
         flipped={flipped}
+        onClick={() => setFlipped(!flipped)}
         onMouseEnter={() => setFlipped(true)}
         onMouseLeave={() => setFlipped(false)}
       >
