@@ -24,13 +24,14 @@ const Container = styled.div`
   height: 100%;
   width: 100%;
 
-  transform: ${({ flipped }) => (flipped ? 'rotateY(180deg)' : '')};
+  transform: ${({ flipped }) => (flipped ? 'rotateY(180deg)' : 'none')};
 `;
 
 const Front = styled.div`
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   position: absolute;
+  z-index: 1;
 
   height: 100%;
   width: 100%;
