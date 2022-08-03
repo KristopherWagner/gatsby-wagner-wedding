@@ -32,6 +32,7 @@ export default function About() {
   return (
     <Root id="about">
       <Title>The Wedding Party</Title>
+      <p>Meet the attendants for our wedding and learn their favorite Disney memory</p>
       <FlipCard
         image={Casper}
         memory="Spending the night in Cinderella Castle and being a part of the parade during the year of a million dreams"
