@@ -20,22 +20,22 @@ const Kelly = <StaticImage alt="Kelly" src="../../images/Kelly.webp" {...SHARED_
 
 const CardContainer = styled.div`
   display: grid;
-  grid-template-columns: 100%;
+  grid-template-columns: 1fr;
 
   @media (min-width: 616px) {
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
   }
 
   @media (min-width: 924px) {
-    grid-template-columns: 33% 34% 33%;
+    grid-template-columns: 1fr 1fr 1fr;
   }
  
   @media (min-width: 1232px) {
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
   @media (min-width: 1540px) {
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 `;
 
