@@ -19,6 +19,7 @@ import {
 
 import Christmas from '../images/christmas.webp';
 import ClimateSimulator from '../images/climate_simulator.webp';
+import SpaceMountain from '../images/space_mountain.webp';
 import StarlightLounge from '../images/starlight_lounge.webp';
 
 export default function IndexPage() {
@@ -32,6 +33,7 @@ export default function IndexPage() {
       <Travel />
       <Parallax url={Christmas} />
       <Covid />
+      <Parallax url={SpaceMountain} />
       <About />
     </>
   );
