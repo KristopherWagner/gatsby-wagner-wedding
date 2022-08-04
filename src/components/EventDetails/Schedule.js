@@ -10,6 +10,12 @@ const Root = styled.div`
   text-align: center;
 `;
 
+const Heading = styled.h1`
+  @media (min-width: 1080px) {
+    float: left;
+  }
+`;
+
 const Grid = styled.div`
   display: grid;
   display: grid;
@@ -23,26 +29,39 @@ const Grid = styled.div`
 export default function Schedule() {
   return (
     <Root>
-      <h1>Thursday</h1>
+      <Heading>Thursday</Heading>
       <Grid>
         <ScheduleItem
           name="Rehearsal"
-          when="TBD"
           where="Disney's Wedding Pavilion"
           who="The wedding party"
         />
+        <ScheduleItem name="Rehearsal Dinner" />
+      </Grid>
+      <Heading>Friday</Heading>
+      <Grid>
         <ScheduleItem
-          name="Rehearsal Dinner"
-          when="TBD"
-          where="TBD"
-          who="All guests"
+          dress="Cocktail attire"
+          name="Ceremony"
+          when="7:30pm - 8:00pm"
+          where="Disney's Wedding Pavilion"
+        />
+        <ScheduleItem
+          dress="Cocktail attire"
+          name="Reception"
+          when="8:30pm - 1:30am"
+          where="Italy Isola, EPCOT"
         />
       </Grid>
-      <h1>Friday</h1>
-      <h2>Ceremony</h2>
-      <h2>Reception</h2>
-      <h1>Sunday</h1>
-      <h2>EPCOT Park Day</h2>
+      <Heading>Sunday</Heading>
+      <Grid>
+        <ScheduleItem
+          dress="Comfortable"
+          name="Park day"
+          when="11:00am"
+          where="EPCOT"
+        />
+      </Grid>
     </Root>
   );
 }
