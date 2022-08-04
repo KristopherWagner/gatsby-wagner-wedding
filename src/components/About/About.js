@@ -5,6 +5,7 @@ import styled from 'styled-components';
 
 import { BRIDESMAID } from '../Colors';
 import FlipCard from './FlipCard';
+import HorizontalRule from '../HorizontalRule';
 
 const SHARED_PROPS = {
   loading: 'lazy',
@@ -46,15 +47,12 @@ const Root = styled.div`
   text-align: center;
 `;
 
-const Title = styled.h2`
-  margin-top: 0px;
-`;
-
 export default function About() {
   return (
     <Root id="about">
-      <Title>The Wedding Party</Title>
-      <p>Meet the attendants for our wedding and learn their favorite Disney memory</p>
+      <h3>The Wedding Party</h3>
+      <p className="subtitle2">Meet the attendants for our wedding and learn their favorite Disney memory</p>
+      <HorizontalRule />
       <CardContainer>
         <FlipCard
           image={Casper}

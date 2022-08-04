@@ -11,7 +11,12 @@ const Grid = styled.div`
   }
 `;
 
-const LeftGridItem = styled.p`
+// eslint-disable-next-line react/prop-types
+function Body({ className, children }) {
+  return <p className={`body1 ${className}`}>{children}</p>;
+}
+
+const LeftGridItem = styled(Body)`
   justify-self: end;
   text-decoration: underline;
 
@@ -20,7 +25,7 @@ const LeftGridItem = styled.p`
   }
 `;
 
-const RightGridItem = styled.p`
+const RightGridItem = styled(Body)`
   @media (min-width: 1080px) {
     justify-self: start;
   }
@@ -32,7 +37,7 @@ export default function ScheduleItem(props) {
   } = props;
   return (
     <div>
-      <h2>{name}</h2>
+      <h5>{name}</h5>
       <Grid>
         <LeftGridItem>Who:</LeftGridItem>
         <RightGridItem>{who}</RightGridItem>

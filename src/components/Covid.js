@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Card from './Card';
 import { BACKGROUND_LIGHT } from './Colors';
+import HorizontalRule from './HorizontalRule';
 
 const Container = styled.div`
   display: grid;
@@ -10,31 +10,37 @@ const Container = styled.div`
 `;
 
 const Root = styled.div`
-    background-color: ${BACKGROUND_LIGHT};
-    padding: 24px;
-    text-align: center;
+  background-color: ${BACKGROUND_LIGHT};
+  padding: 24px;
+  text-align: center;
 `;
 
-const NormalCard = styled(Card)`
-    padding: 0px 8px;`;
+const NormalCard = styled.div`
+  padding: 0px 8px;
+`;
 
-const WideCard = styled(Card)`
-    grid-column: 1 / span 3;
+const WideCard = styled.div`
+  grid-column: 1 / span 3;
+`;
+
+const Youtube = styled.i`
+  color: red;
 `;
 
 export default function Covid() {
   return (
     <Root id="covid">
-      <Card icon="fa-duotone fa-virus-covid">
-        <h2>COVID-19</h2>
-        <p>
+      <div>
+        <h3>COVID-19</h3>
+        <p className="subtitle2">
           We wish we didn&apos;t have to have this conversation but we want to ensure the safety of
           our friends and family as we celebrate together.
         </p>
+        <HorizontalRule />
         <Container>
-          <WideCard icon="fa-duotone fa-syringe">
-            <h3>Vaccination Requirement</h3>
-            <p>
+          <WideCard>
+            <h4>Vaccination Requirement</h4>
+            <p className="body1">
               We are requiring that all guests be fully vaccinated prior to the events.
               This choice is not intended to be about politics, personal, or religious beliefs, or
               individual liberties. We know many of you are flying, and we want to ensure that we
@@ -47,23 +53,26 @@ export default function Covid() {
               and will look forward to celebrating with you another time.
             </p>
           </WideCard>
-          <NormalCard icon="fa-duotone fa-head-side-mask">
-            <h3>Masks</h3>
-            <p>
+          <NormalCard>
+            <h4>Masks</h4>
+            <p className="body1">
               We plan to comply with local regulations regarding masks, gathering size, and social
               distancing. If any local regulations impact our ability to celebrate in a safe
               manner, we will communicate any updates as soon as we can.
             </p>
           </NormalCard>
-          <NormalCard icon="fa-brands fa-youtube">
-            <h3>Live Stream</h3>
-            <p>
+          <NormalCard>
+            <h4>
+              <Youtube className="fa-brands fa-youtube" />
+              {' Live Stream'}
+            </h4>
+            <p className="body1">
               We will provide a live stream of our ceremony for anyone that is unable to comply
               with these measures.
             </p>
           </NormalCard>
         </Container>
-      </Card>
+      </div>
     </Root>
   );
 }

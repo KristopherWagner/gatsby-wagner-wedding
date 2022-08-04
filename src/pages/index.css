@@ -7,12 +7,15 @@ body {
     margin: 0px;
 }
 
+i {
+    color: #1B5E20;
+}
+
 /* Typography */
 h1 {
     font-size: 96px;
     font-weight: 300;
     letter-spacing: -1.5px;
-
 }
 
 h2 {
@@ -100,14 +103,17 @@ h6 {
 
     h3 {
         font-size: 3rem;
+        margin: 0px;
     }
 
     h4 {
         font-size: 2.125rem;
+        margin: 4px 0px;
     }
 
     h5 {
         font-size: 1.5rem;
+        margin: 16px 0px;
     }
 
     h6 {

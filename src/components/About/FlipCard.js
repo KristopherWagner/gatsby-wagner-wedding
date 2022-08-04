@@ -42,7 +42,12 @@ const Back = styled(Front)`
   transform: rotateY(180deg);
 `;
 
-const Memory = styled.p`
+// eslint-disable-next-line react/prop-types
+function Body({ className, children }) {
+  return <p className={`body1 ${className}`}>{children}</p>;
+}
+
+const Memory = styled(Body)`
   padding: 4px;
 `;
 
@@ -63,7 +68,7 @@ export default function FlipCard(props) {
           {image}
         </Front>
         <Back>
-          <h3>{name}</h3>
+          <h6>{name}</h6>
           <Memory>{memory}</Memory>
         </Back>
       </Container>
