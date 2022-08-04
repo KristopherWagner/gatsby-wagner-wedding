@@ -5,14 +5,9 @@ import Accommodations from './Accommodations';
 import Activities from './Activities';
 import Card from '../Card';
 import { FRINGY_FLOWER, PRIMARY } from '../Colors';
+import HorizontalRule from '../HorizontalRule';
 import Link from './Link';
 import Grid from './Grid';
-
-const HorizontalRule = styled.div`
-  border: 1px solid ${PRIMARY};
-  margin: 16px auto;
-  width: 75%;
-`;
 
 const Icon = styled.i`
   color: ${PRIMARY};
