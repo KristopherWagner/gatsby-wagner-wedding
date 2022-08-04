@@ -13,12 +13,17 @@ const Grid = styled.div`
 
 const LeftGridItem = styled.p`
   justify-self: end;
-  margin-right: 16px;
   text-decoration: underline;
+
+  @media (min-width: 1080px) {
+    margin-right: 16px;
+  }
 `;
 
 const RightGridItem = styled.p`
-  justify-self: start;
+  @media (min-width: 1080px) {
+    justify-self: start;
+  }
 `;
 
 export default function ScheduleItem(props) {
@@ -45,11 +50,14 @@ export default function ScheduleItem(props) {
 ScheduleItem.propTypes = {
   dress: PropTypes.string,
   name: PropTypes.string.isRequired,
-  when: PropTypes.string.isRequired,
-  where: PropTypes.string.isRequired,
-  who: PropTypes.string.isRequired,
+  when: PropTypes.string,
+  where: PropTypes.string,
+  who: PropTypes.string,
 };
 
 ScheduleItem.defaultProps = {
   dress: 'Casual',
+  when: 'TBD',
+  where: 'TBD',
+  who: 'All guests',
 };
