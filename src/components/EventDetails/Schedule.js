@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { BRIDESMAID } from '../Colors';
+import { BRIDESMAID, SECONDARY } from '../Colors';
+import HorizontalRule from '../HorizontalRule';
 import ScheduleItem from './ScheduleItem';
 
 const Root = styled.div`
@@ -38,6 +39,7 @@ export default function Schedule() {
         />
         <ScheduleItem name="Rehearsal Dinner" />
       </Grid>
+      <HorizontalRule color={SECONDARY} />
       <Heading>Friday</Heading>
       <Grid>
         <ScheduleItem
@@ -53,6 +55,7 @@ export default function Schedule() {
           where="Italy Isola, EPCOT"
         />
       </Grid>
+      <HorizontalRule color={SECONDARY} />
       <Heading>Sunday</Heading>
       <Grid>
         <ScheduleItem
