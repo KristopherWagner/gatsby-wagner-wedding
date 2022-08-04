@@ -1,20 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { BRIDESMAID, SECONDARY } from '../Colors';
+import { SECONDARY } from '../Colors';
 import HorizontalRule from '../HorizontalRule';
 import ScheduleItem from './ScheduleItem';
 
-const Root = styled.div`
-  background-color: ${BRIDESMAID};
-  padding: 24px 0px;
-  text-align: center;
-`;
-
-const Heading = styled.h1`
-  @media (min-width: 1080px) {
-    float: left;
-  }
+const Heading = styled.h4`
+  margin: auto 0;
 `;
 
 const Grid = styled.div`
@@ -23,15 +15,15 @@ const Grid = styled.div`
   grid-template-columns: 1fr;
 
   @media (min-width: 1080px) {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr 2fr;
   }
 `;
 
 export default function Schedule() {
   return (
-    <Root>
-      <Heading>Thursday</Heading>
+    <>
       <Grid>
+        <Heading>Thursday</Heading>
         <ScheduleItem
           name="Rehearsal"
           where="Disney's Wedding Pavilion"
@@ -40,8 +32,8 @@ export default function Schedule() {
         <ScheduleItem name="Rehearsal Dinner" />
       </Grid>
       <HorizontalRule color={SECONDARY} />
-      <Heading>Friday</Heading>
       <Grid>
+        <Heading>Friday</Heading>
         <ScheduleItem
           dress="Cocktail attire"
           name="Ceremony"
@@ -56,8 +48,8 @@ export default function Schedule() {
         />
       </Grid>
       <HorizontalRule color={SECONDARY} />
-      <Heading>Sunday</Heading>
       <Grid>
+        <Heading>Sunday</Heading>
         <ScheduleItem
           dress="Comfortable"
           name="Park day"
@@ -65,6 +57,6 @@ export default function Schedule() {
           where="EPCOT"
         />
       </Grid>
-    </Root>
+    </>
   );
 }
