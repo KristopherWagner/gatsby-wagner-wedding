@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Card from './Card';
-import { BACKGROUND_LIGHT } from './Colors';
+import Card from '../Card';
+import { BACKGROUND_LIGHT } from '../Colors';
 
 const Container = styled.div`
   display: grid;
