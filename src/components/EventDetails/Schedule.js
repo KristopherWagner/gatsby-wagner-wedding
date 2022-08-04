@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { SECONDARY } from '../Colors';
+import { SECONDARY_CONTAINER_TEXT } from '../Colors';
 import HorizontalRule from '../HorizontalRule';
 import ScheduleItem from './ScheduleItem';
 
@@ -36,7 +36,7 @@ export default function Schedule() {
         />
         <ScheduleItem name="Rehearsal Dinner" />
       </Grid>
-      <HorizontalRule color={SECONDARY} />
+      <HorizontalRule color={SECONDARY_CONTAINER_TEXT} />
       <Grid>
         <Heading>Friday</Heading>
         <ScheduleItem
@@ -52,7 +52,7 @@ export default function Schedule() {
           where="Italy Isola, EPCOT"
         />
       </Grid>
-      <HorizontalRule color={SECONDARY} />
+      <HorizontalRule color={SECONDARY_CONTAINER_TEXT} />
       <Grid>
         <Heading>Sunday</Heading>
         <ScheduleItem

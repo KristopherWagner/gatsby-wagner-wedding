@@ -2,15 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import { STROMBOLI } from '../Colors';
+import { BACKGROUND_LIGHT_TEXT, PRIMARY_CONTAINER_TEXT } from '../Colors';
 
 const StyledLink = styled.a`
-    color: black;
+    color: ${PRIMARY_CONTAINER_TEXT};
     text-decoration: none;
     text-decoration-line: underline;
 
     &:hover {
-        color: ${STROMBOLI};
+        color: ${BACKGROUND_LIGHT_TEXT};
     }
 `;
 

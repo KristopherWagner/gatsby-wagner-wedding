@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import Accommodations from './Accommodations';
 import Activities from './Activities';
-import { FRINGY_FLOWER } from '../Colors';
+import { PRIMARY_CONTAINER, PRIMARY_CONTAINER_TEXT } from '../Colors';
 import HorizontalRule from '../HorizontalRule';
 import Link from './Link';
 import Grid from './Grid';
@@ -15,7 +15,8 @@ const Airport = styled.h5`
 `;
 
 const Root = styled.div`
-    background-color: ${FRINGY_FLOWER};
+    background-color: ${PRIMARY_CONTAINER};
+    color: ${PRIMARY_CONTAINER_TEXT};
     padding: 24px;
     text-align: center;
 `;

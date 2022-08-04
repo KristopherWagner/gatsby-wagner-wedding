@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
-import { BACKGROUND_LIGHT, PRIMARY, SECONDARY } from './Colors';
+import { PRIMARY_TEXT, PRIMARY, SECONDARY_CONTAINER } from './Colors';
 
 const Button = styled.div`
     background-color: ${(props) => (props.expanded ? 'unset' : PRIMARY)};
@@ -23,14 +23,14 @@ const Icon = styled.i`
   height: 50px;
   width: 50px;
 
-  color: ${BACKGROUND_LIGHT};
+  color: ${PRIMARY_TEXT};
   display: table-cell;
   text-align: center;
   vertical-align: middle;
 `;
 
 const Link = styled.a`
-  color: ${BACKGROUND_LIGHT};
+  color: ${PRIMARY_TEXT};
   display: block;
   font-size: 36px;
   margin-top: 18px;
@@ -38,7 +38,7 @@ const Link = styled.a`
   transition: 0.3s;
 
   &:hover {
-    color: ${SECONDARY};
+    color: ${SECONDARY_CONTAINER};
   }
 `;
 

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import { PRIMARY_CONTAINER, PRIMARY_CONTAINER_TEXT } from '../Colors';
 
 const Root = styled.div`
   align-self: center;
@@ -38,7 +39,8 @@ const Front = styled.div`
 `;
 
 const Back = styled(Front)`
-  background-color: #B9E4C9;
+  background-color: ${PRIMARY_CONTAINER};
+  color: ${PRIMARY_CONTAINER_TEXT};
   transform: rotateY(180deg);
 `;
 
