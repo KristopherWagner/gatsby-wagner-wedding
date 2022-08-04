@@ -1,5 +1,6 @@
 import React from 'react';
 
+import '@fontsource/clicker-script';
 import '@fontsource/roboto';
 import '../font-awesome/css/fontawesome.min.css';
 import '../font-awesome/css/brands.min.css';

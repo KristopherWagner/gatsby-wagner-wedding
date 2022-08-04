@@ -5,7 +5,12 @@ import { SECONDARY } from '../Colors';
 import HorizontalRule from '../HorizontalRule';
 import ScheduleItem from './ScheduleItem';
 
-const Heading = styled.h4`
+// eslint-disable-next-line react/prop-types
+function Cursive({ className, children }) {
+  return <h4 className={`cursive ${className}`}>{children}</h4>;
+}
+
+const Heading = styled(Cursive)`
   margin: auto 0;
 `;
 
