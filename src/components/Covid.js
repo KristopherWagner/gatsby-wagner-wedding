@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { BACKGROUND_LIGHT } from './Colors';
+import { BACKGROUND_LIGHT, BACKGROUND_LIGHT_TEXT } from './Colors';
 import HorizontalRule from './HorizontalRule';
 
 const Container = styled.div`
@@ -11,6 +11,7 @@ const Container = styled.div`
 
 const Root = styled.div`
   background-color: ${BACKGROUND_LIGHT};
+  color: ${BACKGROUND_LIGHT_TEXT};
   padding: 24px;
   text-align: center;
 `;
@@ -36,7 +37,7 @@ export default function Covid() {
           We wish we didn&apos;t have to have this conversation but we want to ensure the safety of
           our friends and family as we celebrate together.
         </p>
-        <HorizontalRule />
+        <HorizontalRule color={BACKGROUND_LIGHT_TEXT} />
         <Container>
           <WideCard>
             <h4>Vaccination Requirement</h4>

@@ -1,12 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { BRIDESMAID, SECONDARY } from '../Colors';
+import { SECONDARY_CONTAINER, SECONDARY_CONTAINER_TEXT } from '../Colors';
 import HorizontalRule from '../HorizontalRule';
 import Schedule from './Schedule';
 
 const Root = styled.div`
-  background-color: ${BRIDESMAID};
+  background-color: ${SECONDARY_CONTAINER};
+  color: ${SECONDARY_CONTAINER_TEXT};
   padding: 24px;
   text-align: center;
 `;
@@ -16,7 +17,7 @@ export default function Event() {
     <Root id="details">
       <h3 className="cursive">Our Wedding Day</h3>
       <p className="subtitle2">10th March, 2023</p>
-      <HorizontalRule color={SECONDARY} />
+      <HorizontalRule color={SECONDARY_CONTAINER_TEXT} />
       <Schedule />
     </Root>
   );

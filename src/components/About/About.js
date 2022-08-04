@@ -3,7 +3,7 @@ import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
 
-import { BRIDESMAID } from '../Colors';
+import { SECONDARY_CONTAINER, SECONDARY_CONTAINER_TEXT } from '../Colors';
 import FlipCard from './FlipCard';
 import HorizontalRule from '../HorizontalRule';
 
@@ -42,7 +42,8 @@ const CardContainer = styled.div`
 `;
 
 const Root = styled.div`
-  background-color: ${BRIDESMAID};
+  background-color: ${SECONDARY_CONTAINER};
+  color: ${SECONDARY_CONTAINER_TEXT};
   padding: 24px 0px;
   text-align: center;
 `;
@@ -52,7 +53,7 @@ export default function About() {
     <Root id="about">
       <h3 className="cursive">The Wedding Party</h3>
       <p className="subtitle2">Meet the attendants for our wedding and learn their favorite Disney memory</p>
-      <HorizontalRule />
+      <HorizontalRule color={SECONDARY_CONTAINER_TEXT} />
       <CardContainer>
         <FlipCard
           image={Casper}
