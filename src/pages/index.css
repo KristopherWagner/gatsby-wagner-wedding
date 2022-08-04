@@ -6,3 +6,127 @@ body {
     font-family: "Roboto", sans-serif;
     margin: 0px;
 }
+
+/* Typography */
+h1 {
+    font-size: 96px;
+    font-weight: 300;
+    letter-spacing: -1.5px;
+
+}
+
+h2 {
+    font-size: 60px;
+    font-weight: 300;
+    letter-spacing: -0.5px;
+}
+
+h3 {
+    font-size: 48px;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+h4 {
+    font-size: 34px;
+    font-weight: 400;
+    letter-spacing: 0.25px;
+}
+
+h5 {
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+h6 {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.15px;
+}
+
+.subtitle1 {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.15px;
+}
+
+.subtitle2 {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+}
+
+.body1 {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.body2 {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.25px;
+}
+
+.button {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.25px;
+    text-transform: capitalize;
+}
+
+.caption {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+}
+
+.overline {
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    text-transform: capitalize;
+}
+
+@media only screen and (min-width: 1080px) {
+    h1 {
+        font-size: 6rem;
+    }
+    
+    h2 {
+        font-size: 3.75rem;
+    }
+
+    h3 {
+        font-size: 3rem;
+    }
+
+    h4 {
+        font-size: 2.125rem;
+    }
+
+    h5 {
+        font-size: 1.5rem;
+    }
+
+    h6 {
+        font-size: 1.25rem;
+    }
+
+    .subtitle1, .body1 {
+        font-size: 1rem;
+    }
+
+    .subtitle2, .body2, .button {
+        font-size: 0.875rem;
+    }
+
+    .button {
+        font-size: 0.75rem;
+    }
+
+    .overline {
+        font-size: 0.635rem;
+    }
+}
