@@ -9,7 +9,7 @@ export default function Helmet(props) {
       {/* HTML */}
       <title>{title}</title>
       <meta name="description" content="All of the details for our Disney Fairy Tale Wedding" />
-      <meta name="robots" content="nofollow , noimageinde, noarchive" />
+      <meta name="robots" content="nofollow, noimageindex, noarchive" />
       <link rel="canonical" href="https://swansonwagner.wedding" />
 
       {/* Facebook */}
