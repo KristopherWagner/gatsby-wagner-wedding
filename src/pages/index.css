@@ -92,10 +92,6 @@ h6 {
     text-transform: capitalize;
 }
 
-.cursive {
-    font-family: "Clicker Script", "Roboto", "sans-serif";
-}
-
 @media only screen and (min-width: 1080px) {
     h1 {
         font-size: 6rem;

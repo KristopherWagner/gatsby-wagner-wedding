@@ -12,15 +12,6 @@ const Grid = styled.div`
 `;
 
 // eslint-disable-next-line react/prop-types
-function Cursive({ className, children }) {
-  return <h5 className={`cursive ${className}`}>{children}</h5>;
-}
-
-const Heading = styled(Cursive)`
-  text-decoration: underline;
-`;
-
-// eslint-disable-next-line react/prop-types
 function Body({ className, children }) {
   return <p className={`body1 ${className}`}>{children}</p>;
 }
@@ -30,14 +21,13 @@ const LeftGridItem = styled(Body)`
   text-decoration: underline;
 
   @media (min-width: 1080px) {
-    margin: 8px 16px 8px 0px;
+    margin-right: 16px;
   }
 `;
 
 const RightGridItem = styled(Body)`
   @media (min-width: 1080px) {
     justify-self: start;
-    margin: 8px 0px;
   }
 `;
 
@@ -47,7 +37,7 @@ export default function ScheduleItem(props) {
   } = props;
   return (
     <div>
-      <Heading>{name}</Heading>
+      <h5>{name}</h5>
       <Grid>
         <LeftGridItem>Who:</LeftGridItem>
         <RightGridItem>{who}</RightGridItem>
