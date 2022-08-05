@@ -3,12 +3,16 @@ html {
 }
 
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", "", sans-serif;
     margin: 0px;
 }
 
 i {
     color: #1B5E20;
+}
+
+.montserrat {
+    font-family: "Montserrat", serif;
 }
 
 /* Typography */

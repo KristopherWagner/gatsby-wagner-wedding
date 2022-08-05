@@ -1,5 +1,6 @@
 import React from 'react';
 
+import '@fontsource/montserrat';
 import '@fontsource/roboto';
 import '../font-awesome/css/fontawesome.min.css';
 import '../font-awesome/css/brands.min.css';

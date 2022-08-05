@@ -28,7 +28,7 @@ export default function Activities() {
       </p>
       <Grid>
         <div>
-          <h5>
+          <h5 className="montserrat">
             <i className="fa-duotone fa-pizza-slice" />
             {' Eat'}
           </h5>
@@ -47,7 +47,7 @@ export default function Activities() {
           </List>
         </div>
         <div>
-          <h5>
+          <h5 className="montserrat">
             <i className="fa-duotone fa-beer-mug" />
             {' Drink'}
           </h5>
@@ -104,7 +104,7 @@ export default function Activities() {
           </List>
         </div>
         <div>
-          <h5>
+          <h5 className="montserrat">
             <i className="fa-duotone fa-roller-coaster" />
             {' Play'}
           </h5>

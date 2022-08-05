@@ -11,6 +11,11 @@ const Grid = styled.div`
   }
 `;
 
+const Heading = styled.h5`
+  font-family: "Montserrat", serif;
+  text-decoration: underline;
+`;
+
 // eslint-disable-next-line react/prop-types
 function Body({ className, children }) {
   return <p className={`body1 ${className}`}>{children}</p>;
@@ -21,13 +26,14 @@ const LeftGridItem = styled(Body)`
   text-decoration: underline;
 
   @media (min-width: 1080px) {
-    margin-right: 16px;
+    margin: 8px 16px 8px 0px;
   }
 `;
 
 const RightGridItem = styled(Body)`
   @media (min-width: 1080px) {
     justify-self: start;
+    margin: 8px 0px;
   }
 `;
 
@@ -37,7 +43,7 @@ export default function ScheduleItem(props) {
   } = props;
   return (
     <div>
-      <h5>{name}</h5>
+      <Heading>{name}</Heading>
       <Grid>
         <LeftGridItem>Who:</LeftGridItem>
         <RightGridItem>{who}</RightGridItem>
