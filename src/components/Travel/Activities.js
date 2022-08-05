@@ -28,9 +28,9 @@ export default function Activities() {
       </p>
       <Grid>
         <div>
-          <h5 className="cursive">
+          <h5>
             <i className="fa-duotone fa-pizza-slice" />
-            {'  Eat'}
+            {' Eat'}
           </h5>
           <List>
             <Bold>EPCOT</Bold>
@@ -47,9 +47,9 @@ export default function Activities() {
           </List>
         </div>
         <div>
-          <h5 className="cursive">
+          <h5>
             <i className="fa-duotone fa-beer-mug" />
-            {'  Drink'}
+            {' Drink'}
           </h5>
           <List>
             <Bold>Disney&apos;s Boardwalk</Bold>
@@ -104,9 +104,9 @@ export default function Activities() {
           </List>
         </div>
         <div>
-          <h5 className="cursive">
+          <h5>
             <i className="fa-duotone fa-roller-coaster" />
-            {'  Play'}
+            {' Play'}
           </h5>
           <List>
             <li className="body1">EPCOT</li>

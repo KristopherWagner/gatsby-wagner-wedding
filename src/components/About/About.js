@@ -51,7 +51,7 @@ const Root = styled.div`
 export default function About() {
   return (
     <Root id="about">
-      <h3 className="cursive">The Wedding Party</h3>
+      <h3>The Wedding Party</h3>
       <p className="subtitle2">Meet the attendants for our wedding and learn their favorite Disney memory</p>
       <HorizontalRule color={SECONDARY_CONTAINER_TEXT} />
       <CardContainer>
