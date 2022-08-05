@@ -58,7 +58,7 @@ const Overlay = styled.div`
   transition-delay: ${(props) => (props.expanded ? '0' : '0.5s')};
 `;
 
-const OverlayContent = styled.div`
+const OverlayContent = styled.nav`
   position: relative;
   top: 25%;
   width: 100%;

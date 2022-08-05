@@ -29,13 +29,21 @@ export default function IndexPage() {
       <Helmet />
       <Navigation />
       <Parallax url={StarlightLounge} />
-      <EventDetails />
+      <section>
+        <EventDetails />
+      </section>
       <Parallax url={ClimateSimulator} />
-      <Travel />
+      <section>
+        <Travel />
+      </section>
       <Parallax url={Christmas} />
-      <Covid />
+      <section>
+        <Covid />
+      </section>
       <Parallax url={SpaceMountain} />
-      <About />
+      <section>
+        <About />
+      </section>
     </>
   );
 }
