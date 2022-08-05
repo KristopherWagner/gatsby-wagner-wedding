@@ -6,7 +6,11 @@ import HorizontalRule from './HorizontalRule';
 
 const Container = styled.div`
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 1fr;
+
+  @media (min-width: 1080px) {
+    grid-template-columns: 1fr 1fr;
+  }
 `;
 
 const Root = styled.div`
@@ -21,7 +25,9 @@ const NormalCard = styled.div`
 `;
 
 const WideCard = styled.div`
-  grid-column: 1 / span 3;
+  @media (min-width: 1080px) {
+    grid-column: 1 / span 3;
+  }
 `;
 
 const Youtube = styled.i`
