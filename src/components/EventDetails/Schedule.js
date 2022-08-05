@@ -6,6 +6,7 @@ import HorizontalRule from '../HorizontalRule';
 import ScheduleItem from './ScheduleItem';
 
 const Heading = styled.h4`
+  font-family: "Montserrat", serif;
   margin: auto 0;
 `;
 
