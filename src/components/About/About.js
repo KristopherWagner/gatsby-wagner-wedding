@@ -18,7 +18,17 @@ const Ella = <StaticImage alt="Ella" src="../../images/Ella.webp" {...SHARED_PRO
 const Jesse = <StaticImage alt="Jesse" src="../../images/Jesse.webp" {...SHARED_PROPS} />;
 const Jordan = <StaticImage alt="Jordan" src="../../images/Jordan.webp" {...SHARED_PROPS} />;
 const Kelly = <StaticImage alt="Kelly" src="../../images/Kelly.webp" {...SHARED_PROPS} />;
+const Kristopher = <StaticImage alt="Kristopher" src="../../images/Kristopher.webp" {...SHARED_PROPS} />;
 const Nick = <StaticImage alt="Nick" src="../../images/Nick.webp" {...SHARED_PROPS} />;
+
+const BrideAndGroomContainer = styled.div`
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: 616px) {
+    grid-template-columns: 1fr 1fr;
+  }
+`;
 
 const CardContainer = styled.div`
   display: grid;
@@ -52,14 +62,19 @@ export default function About() {
   return (
     <Root id="about">
       <h3 className="montserrat">The Wedding Party</h3>
+      <h4>Bride and Groom</h4>
+      <HorizontalRule color={SECONDARY_CONTAINER_TEXT} />
+      <BrideAndGroomContainer>
+        <FlipCard
+          image={Kristopher}
+          memory="Experiencing the Star Wars Galactic Starcruiser with Shannon"
+          name="Kristopher Wagner"
+        />
+      </BrideAndGroomContainer>
+      <h4>Attendants</h4>
       <p className="subtitle2">Meet the attendants for our wedding and learn their favorite Disney memory</p>
       <HorizontalRule color={SECONDARY_CONTAINER_TEXT} />
       <CardContainer>
-        <FlipCard
-          image={Casper}
-          memory="Spending the night in Cinderella Castle and being a part of the parade during the year of a million dreams"
-          name="Casper Wagner"
-        />
         <FlipCard
           image={Ella}
           memory="Seeing Cinderella Castle from the ferry boat for the first time."
@@ -76,14 +91,19 @@ export default function About() {
           name="Jordan Barrett"
         />
         <FlipCard
-          image={Kelly}
-          memory="Feeling like I'm flying on the Avatar Flight of Passage ride in Pandora."
-          name="Kelly Swanson-Obando"
-        />
-        <FlipCard
           image={Nick}
           memory="Waking up every morning at the Animal Kingdom Lodge and seeing the animals walk outside my room."
           name="Nicholas Stuter"
+        />
+        <FlipCard
+          image={Casper}
+          memory="Spending the night in Cinderella Castle and being a part of the parade during the year of a million dreams"
+          name="Casper Wagner"
+        />
+        <FlipCard
+          image={Kelly}
+          memory="Feeling like I'm flying on the Avatar Flight of Passage ride in Pandora."
+          name="Kelly Swanson-Obando"
         />
       </CardContainer>
     </Root>
