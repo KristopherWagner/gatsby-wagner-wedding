@@ -15,6 +15,7 @@ const SHARED_PROPS = {
 
 const Casper = <StaticImage alt="Casper" src="../../images/Casper.webp" {...SHARED_PROPS} />;
 const Ella = <StaticImage alt="Ella" src="../../images/Ella.webp" {...SHARED_PROPS} />;
+const Jeb = <StaticImage alt="Jeb" src="../../images/Jeb.webp" {...SHARED_PROPS} />;
 const Jesse = <StaticImage alt="Jesse" src="../../images/Jesse.webp" {...SHARED_PROPS} />;
 const Jordan = <StaticImage alt="Jordan" src="../../images/Jordan.webp" {...SHARED_PROPS} />;
 const Kelly = <StaticImage alt="Kelly" src="../../images/Kelly.webp" {...SHARED_PROPS} />;
@@ -77,23 +78,23 @@ export default function About() {
       <CardContainer>
         <FlipCard
           image={Ella}
-          memory="Seeing Cinderella Castle from the ferry boat for the first time."
+          memory="Seeing Cinderella Castle from the ferry boat for the first time"
           name="Ella Melzer"
         />
         <FlipCard
           image={Jesse}
-          memory="Riding the Kilimanjaro Safari with my wife."
+          memory="Riding the Kilimanjaro Safari with my wife"
           name="Jesse Sharkawy"
         />
         <FlipCard
           image={Jordan}
-          memory="Spending an entire day meeting characters and collecting signatures for my grad cap."
+          memory="Spending an entire day meeting characters and collecting signatures for my grad cap"
           name="Jordan Barrett"
         />
         <FlipCard
-          image={Nick}
-          memory="Waking up every morning at the Animal Kingdom Lodge and seeing the animals walk outside my room."
-          name="Nicholas Stuter"
+          image={Jeb}
+          memory="Exploring the halloween party with my siblings and eating all the desserts"
+          name="Jeb Wagner"
         />
         <FlipCard
           image={Casper}
@@ -101,8 +102,13 @@ export default function About() {
           name="Casper Wagner"
         />
         <FlipCard
+          image={Nick}
+          memory="Waking up every morning at the Animal Kingdom Lodge and seeing the animals walk outside my room"
+          name="Nicholas Stuter"
+        />
+        <FlipCard
           image={Kelly}
-          memory="Feeling like I'm flying on the Avatar Flight of Passage ride in Pandora."
+          memory="Feeling like I'm flying on the Avatar Flight of Passage ride in Pandora"
           name="Kelly Swanson-Obando"
         />
       </CardContainer>
