@@ -14,6 +14,7 @@ import {
   EventDetails,
   Navigation,
   Parallax,
+  Section,
   Schedule,
   Travel,
 } from '../components';
@@ -28,24 +29,24 @@ export default function IndexPage() {
     <>
       <Navigation />
       <Parallax url={StarlightLounge} />
-      <section>
+      <Section anchor="details" variant="light">
         <EventDetails />
-      </section>
+      </Section>
       <Parallax url={ClimateSimulator} />
-      <section>
+      <Section anchor="travel" variant="primary">
         <Travel />
-      </section>
+      </Section>
       <Parallax url={Christmas} />
-      <section>
+      <Section anchor="covid" variant="light">
         <Covid />
-      </section>
+      </Section>
       <Parallax url={SpaceMountain} />
-      <section>
+      <Section anchor="about" variant="secondary">
         <About />
-      </section>
-      <section>
+      </Section>
+      <Section anchor="schedule" variant="primary">
         <Schedule />
-      </section>
+      </Section>
     </>
   );
 }
