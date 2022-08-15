@@ -21,6 +21,7 @@ const Jordan = <StaticImage alt="Jordan" src="../../images/Jordan.webp" {...SHAR
 const Kelly = <StaticImage alt="Kelly" src="../../images/Kelly.webp" {...SHARED_PROPS} />;
 const Kristopher = <StaticImage alt="Kristopher" src="../../images/Kristopher.webp" {...SHARED_PROPS} />;
 const Nick = <StaticImage alt="Nick" src="../../images/Nick.webp" {...SHARED_PROPS} />;
+const Sarah = <StaticImage alt="Sarah" src="../../images/Sarah.webp" {...SHARED_PROPS} />;
 
 const BrideAndGroomContainer = styled.div`
   display: grid;
@@ -87,9 +88,9 @@ export default function About() {
           name="Jesse Sharkawy"
         />
         <FlipCard
-          image={Jordan}
-          memory="Spending an entire day meeting characters and collecting signatures for my grad cap"
-          name="Jordan Barrett"
+          image={Sarah}
+          memory="Watching Fourth of July Fireworks from Liberty Square"
+          name="Sarah Melzer"
         />
         <FlipCard
           image={Jeb}
@@ -97,14 +98,19 @@ export default function About() {
           name="Jeb Wagner"
         />
         <FlipCard
-          image={Casper}
-          memory="Spending the night in Cinderella Castle and being a part of the parade during the year of a million dreams"
-          name="Casper Wagner"
+          image={Jordan}
+          memory="Spending an entire day meeting characters and collecting signatures for my grad cap"
+          name="Jordan Barrett"
         />
         <FlipCard
           image={Nick}
           memory="Waking up every morning at the Animal Kingdom Lodge and seeing the animals walk outside my room"
           name="Nicholas Stuter"
+        />
+        <FlipCard
+          image={Casper}
+          memory="Spending the night in Cinderella Castle and being a part of the parade during the year of a million dreams"
+          name="Casper Wagner"
         />
         <FlipCard
           image={Kelly}
