@@ -21,6 +21,7 @@ const Jordan = <StaticImage alt="Jordan" src="../../images/Jordan.webp" {...SHAR
 const Kelly = <StaticImage alt="Kelly" src="../../images/Kelly.webp" {...SHARED_PROPS} />;
 const Kristopher = <StaticImage alt="Kristopher" src="../../images/Kristopher.webp" {...SHARED_PROPS} />;
 const Nick = <StaticImage alt="Nick" src="../../images/Nick.webp" {...SHARED_PROPS} />;
+const Shannon = <StaticImage alt="Shannon" src="../../images/Shannon.webp" {...SHARED_PROPS} />;
 const Sarah = <StaticImage alt="Sarah" src="../../images/Sarah.webp" {...SHARED_PROPS} />;
 
 const BrideAndGroomContainer = styled.div`
@@ -67,6 +68,11 @@ export default function About() {
       <h4>Bride and Groom</h4>
       <HorizontalRule color={SECONDARY_CONTAINER_TEXT} />
       <BrideAndGroomContainer>
+        <FlipCard
+          image={Shannon}
+          memory="Going on a nighttime safari with Kristopher for my birthday"
+          name="Shannon Swanson"
+        />
         <FlipCard
           image={Kristopher}
           memory="Experiencing the Star Wars Galactic Starcruiser with Shannon"
