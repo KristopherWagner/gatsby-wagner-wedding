@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { SECONDARY_CONTAINER_TEXT } from '../Colors';
+import { PRIMARY_CONTAINER, PRIMARY_CONTAINER_TEXT } from '../Colors';
 import HorizontalRule from '../HorizontalRule';
 import ScheduleItem from './ScheduleItem';
 
@@ -20,9 +20,21 @@ const Grid = styled.div`
   }
 `;
 
+const Root = styled.div`
+  background-color: ${PRIMARY_CONTAINER};
+  color: ${PRIMARY_CONTAINER_TEXT};
+  padding: 48px 24px 24px;
+  text-align: center;
+`;
+
 export default function Schedule() {
   return (
-    <>
+    <Root id="schedule">
+      <h3>Schedule of Events</h3>
+      <p className="subtitle2">
+        Check back later for more details
+      </p>
+      <HorizontalRule color={PRIMARY_CONTAINER_TEXT} />
       <Grid>
         <Heading>Thursday</Heading>
         <ScheduleItem
@@ -30,9 +42,12 @@ export default function Schedule() {
           where="Disney's Wedding Pavilion"
           who="The wedding party"
         />
-        <ScheduleItem name="Rehearsal Dinner" />
+        <ScheduleItem
+          name="Rehearsal Dinner"
+          when="After the Rehearsal"
+        />
       </Grid>
-      <HorizontalRule color={SECONDARY_CONTAINER_TEXT} />
+      <HorizontalRule color={PRIMARY_CONTAINER_TEXT} />
       <Grid>
         <Heading>Friday</Heading>
         <ScheduleItem
@@ -48,7 +63,7 @@ export default function Schedule() {
           where="Italy Isola, EPCOT"
         />
       </Grid>
-      <HorizontalRule color={SECONDARY_CONTAINER_TEXT} />
+      <HorizontalRule color={PRIMARY_CONTAINER_TEXT} />
       <Grid>
         <Heading>Sunday</Heading>
         <ScheduleItem
@@ -58,6 +73,6 @@ export default function Schedule() {
           where="EPCOT"
         />
       </Grid>
-    </>
+    </Root>
   );
 }

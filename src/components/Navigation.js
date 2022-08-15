@@ -115,6 +115,13 @@ export default function Navigation() {
           >
             About Us
           </Link>
+          <Link
+            aria-label="Go to the schedule of events"
+            href="/#schedule"
+            onClick={closeOverlay}
+          >
+            Schedule
+          </Link>
         </OverlayContent>
       </Overlay>
     </>
