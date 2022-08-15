@@ -31,11 +31,13 @@ export default function Schedule() {
       <Grid>
         <Heading>Thursday</Heading>
         <ScheduleItem
+          dress="Casual"
           name="Rehearsal"
           where="Disney's Wedding Pavilion"
           who="The wedding party"
         />
         <ScheduleItem
+          dress="Casual"
           name="Rehearsal Dinner"
           when="After the Rehearsal"
         />
