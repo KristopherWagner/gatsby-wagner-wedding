@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { PRIMARY_CONTAINER, PRIMARY_CONTAINER_TEXT } from '../Colors';
+import { PRIMARY_CONTAINER_TEXT } from '../Colors';
 import HorizontalRule from '../HorizontalRule';
 import ScheduleItem from './ScheduleItem';
 
@@ -20,16 +20,9 @@ const Grid = styled.div`
   }
 `;
 
-const Root = styled.div`
-  background-color: ${PRIMARY_CONTAINER};
-  color: ${PRIMARY_CONTAINER_TEXT};
-  padding: 48px 24px 24px;
-  text-align: center;
-`;
-
 export default function Schedule() {
   return (
-    <Root id="schedule">
+    <>
       <h3>Schedule of Events</h3>
       <p className="subtitle2">
         Check back later for more details
@@ -73,6 +66,6 @@ export default function Schedule() {
           where="EPCOT"
         />
       </Grid>
-    </Root>
+    </>
   );
 }

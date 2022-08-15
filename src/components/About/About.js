@@ -3,7 +3,7 @@ import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
 
-import { SECONDARY_CONTAINER, SECONDARY_CONTAINER_TEXT } from '../Colors';
+import { SECONDARY_CONTAINER_TEXT } from '../Colors';
 import FlipCard from './FlipCard';
 import HorizontalRule from '../HorizontalRule';
 
@@ -37,33 +37,26 @@ const CardContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr;
 
-  @media (min-width: 616px) {
+  @media (min-width: 640px) {
     grid-template-columns: 1fr 1fr;
   }
 
-  @media (min-width: 924px) {
+  @media (min-width: 948px) {
     grid-template-columns: 1fr 1fr 1fr;
   }
  
-  @media (min-width: 1232px) {
+  @media (min-width: 1256px) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
-  @media (min-width: 1540px) {
+  @media (min-width: 1564px) {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 `;
 
-const Root = styled.div`
-  background-color: ${SECONDARY_CONTAINER};
-  color: ${SECONDARY_CONTAINER_TEXT};
-  padding: 24px 0px;
-  text-align: center;
-`;
-
 export default function About() {
   return (
-    <Root id="about">
+    <>
       <h3 className="montserrat">The Wedding Party</h3>
       <h4>Bride and Groom</h4>
       <HorizontalRule color={SECONDARY_CONTAINER_TEXT} />
@@ -124,6 +117,6 @@ export default function About() {
           name="Kelly Swanson-Obando"
         />
       </CardContainer>
-    </Root>
+    </>
   );
 }
