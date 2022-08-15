@@ -14,6 +14,7 @@ import {
   EventDetails,
   Navigation,
   Parallax,
+  Schedule,
   Travel,
 } from '../components';
 
@@ -41,6 +42,9 @@ export default function IndexPage() {
       <Parallax url={SpaceMountain} />
       <section>
         <About />
+      </section>
+      <section>
+        <Schedule />
       </section>
     </>
   );

@@ -45,14 +45,30 @@ export default function ScheduleItem(props) {
     <div>
       <Heading>{name}</Heading>
       <Grid>
-        <LeftGridItem>Who:</LeftGridItem>
-        <RightGridItem>{who}</RightGridItem>
-        <LeftGridItem>When:</LeftGridItem>
-        <RightGridItem>{when}</RightGridItem>
-        <LeftGridItem>Where:</LeftGridItem>
-        <RightGridItem>{where}</RightGridItem>
-        <LeftGridItem>Dress code:</LeftGridItem>
-        <RightGridItem>{dress}</RightGridItem>
+        {who && (
+          <>
+            <LeftGridItem>Who:</LeftGridItem>
+            <RightGridItem>{who}</RightGridItem>
+          </>
+        )}
+        {when && (
+          <>
+            <LeftGridItem>When:</LeftGridItem>
+            <RightGridItem>{when}</RightGridItem>
+          </>
+        )}
+        {where && (
+          <>
+            <LeftGridItem>Where:</LeftGridItem>
+            <RightGridItem>{where}</RightGridItem>
+          </>
+        )}
+        {dress && (
+          <>
+            <LeftGridItem>Dress code:</LeftGridItem>
+            <RightGridItem>{dress}</RightGridItem>
+          </>
+        )}
       </Grid>
     </div>
   );
@@ -67,8 +83,8 @@ ScheduleItem.propTypes = {
 };
 
 ScheduleItem.defaultProps = {
-  dress: 'Casual',
-  when: 'TBD',
-  where: 'TBD',
-  who: 'All guests',
+  dress: undefined,
+  when: undefined,
+  where: undefined,
+  who: undefined,
 };
