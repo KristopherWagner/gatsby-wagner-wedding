@@ -17,12 +17,12 @@ export default function Travel() {
   return (
     <>
       <h3>Travel and Accommodations</h3>
-      <p className="subtitle2">
+      <p className="subtitle1">
         Our entire wedding will be contained within the Walt Disney World Resort.
         We highly recommend you fly into the Orlando International Airport (MCO)
         and stay on-property at any of the numerous Walt Disney World Resort hotels.
       </p>
-      <p className="subtitle1">
+      <p className="subtitle2">
         <i className="fa-duotone fa-comment-question" />
         {' Need help? Feel free to '}
         <Link
