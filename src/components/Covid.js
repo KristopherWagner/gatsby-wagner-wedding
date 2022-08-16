@@ -31,7 +31,7 @@ export default function Covid() {
   return (
     <>
       <h3>COVID-19</h3>
-      <p className="subtitle2">
+      <p className="subtitle1">
         We wish we didn&apos;t have to have this conversation but we want to ensure the safety of
         our friends and family as we celebrate together.
       </p>

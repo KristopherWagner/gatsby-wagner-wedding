@@ -21,7 +21,7 @@ export default function Event() {
     <>
       <h3><Icon className="fa-duotone fa-calendar-heart" /></h3>
       <h3 className="montserrat">Our Wedding Day</h3>
-      <p className="subtitle2">10th March, 2023</p>
+      <p className="body1">10th March, 2023</p>
       <Container>
         <div>
           <h4><Icon className="fa-duotone fa-rings-wedding" /></h4>

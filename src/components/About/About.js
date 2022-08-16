@@ -75,7 +75,7 @@ export default function About() {
         />
       </BrideAndGroomContainer>
       <h4>Attendants</h4>
-      <p className="subtitle2">Meet the attendants for our wedding and learn their favorite Disney memory</p>
+      <p className="subtitle1">Meet the attendants for our wedding and learn their favorite Disney memory</p>
       <HorizontalRule color={SECONDARY_CONTAINER_TEXT} />
       <CardContainer>
         <FlipCard
