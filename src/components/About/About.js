@@ -16,11 +16,13 @@ const SHARED_PROPS = {
 const Casper = <StaticImage alt="Casper" src="../../images/Casper.webp" {...SHARED_PROPS} />;
 const Ella = <StaticImage alt="Ella" src="../../images/Ella.webp" {...SHARED_PROPS} />;
 const Jeb = <StaticImage alt="Jeb" src="../../images/Jeb.webp" {...SHARED_PROPS} />;
+const Jeremy = <StaticImage alt="Jeremy" src="../../images/Jeremy.webp" {...SHARED_PROPS} />;
 const Jesse = <StaticImage alt="Jesse" src="../../images/Jesse.webp" {...SHARED_PROPS} />;
 const Jordan = <StaticImage alt="Jordan" src="../../images/Jordan.webp" {...SHARED_PROPS} />;
 const Kelly = <StaticImage alt="Kelly" src="../../images/Kelly.webp" {...SHARED_PROPS} />;
 const Kristopher = <StaticImage alt="Kristopher" src="../../images/Kristopher.webp" {...SHARED_PROPS} />;
 const Nick = <StaticImage alt="Nick" src="../../images/Nick.webp" {...SHARED_PROPS} />;
+const Norman = <StaticImage alt="Norman" src="../../images/Will.webp" {...SHARED_PROPS} />;
 const Shannon = <StaticImage alt="Shannon" src="../../images/Shannon.webp" {...SHARED_PROPS} />;
 const Sarah = <StaticImage alt="Sarah" src="../../images/Sarah.webp" {...SHARED_PROPS} />;
 
@@ -92,9 +94,9 @@ export default function About() {
           name="Sarah Melzer"
         />
         <FlipCard
-          image={Jeb}
-          memory="Exploring the halloween party with my siblings and eating all the desserts"
-          name="Jeb Wagner"
+          image={Nick}
+          memory="Waking up every morning at the Animal Kingdom Lodge and seeing the animals walk outside my room"
+          name="Nicholas Stuter"
         />
         <FlipCard
           image={Jordan}
@@ -102,9 +104,19 @@ export default function About() {
           name="Jordan Barrett"
         />
         <FlipCard
-          image={Nick}
-          memory="Waking up every morning at the Animal Kingdom Lodge and seeing the animals walk outside my room"
-          name="Nicholas Stuter"
+          image={Norman}
+          memory="Staying at Disney with Jordan for the first time"
+          name="Norman Swanson"
+        />
+        <FlipCard
+          image={Kelly}
+          memory="Feeling like I'm flying on the Avatar Flight of Passage ride in Pandora"
+          name="Kelly Swanson-Obando"
+        />
+        <FlipCard
+          image={Jeb}
+          memory="Exploring the halloween party with my siblings and eating all the desserts"
+          name="Jeb Wagner"
         />
         <FlipCard
           image={Casper}
@@ -112,9 +124,9 @@ export default function About() {
           name="Casper Wagner"
         />
         <FlipCard
-          image={Kelly}
-          memory="Feeling like I'm flying on the Avatar Flight of Passage ride in Pandora"
-          name="Kelly Swanson-Obando"
+          image={Jeremy}
+          memory="Accidentally cutting to the front of the line for Donald Duck"
+          name="Jeremy Charles"
         />
       </CardContainer>
     </>
