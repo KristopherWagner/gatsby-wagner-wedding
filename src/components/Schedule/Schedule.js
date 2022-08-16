@@ -31,13 +31,10 @@ export default function Schedule() {
       <Grid>
         <Heading>Thursday</Heading>
         <ScheduleItem
-          name="Rehearsal"
-          where="Disney's Wedding Pavilion"
-          who="The wedding party"
-        />
-        <ScheduleItem
           name="Rehearsal Dinner"
-          when="After the Rehearsal"
+          when="TBD"
+          where="TBD"
+          who="All guests (optional)"
         />
       </Grid>
       <HorizontalRule color={PRIMARY_CONTAINER_TEXT} />
@@ -63,6 +60,7 @@ export default function Schedule() {
           name="Park day"
           when="11:00am"
           where="EPCOT"
+          who="All guests (optional)"
         />
       </Grid>
     </>
