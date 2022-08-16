@@ -22,9 +22,9 @@ const Jordan = <StaticImage alt="Jordan" src="../../images/Jordan.webp" {...SHAR
 const Kelly = <StaticImage alt="Kelly" src="../../images/Kelly.webp" {...SHARED_PROPS} />;
 const Kristopher = <StaticImage alt="Kristopher" src="../../images/Kristopher.webp" {...SHARED_PROPS} />;
 const Nick = <StaticImage alt="Nick" src="../../images/Nick.webp" {...SHARED_PROPS} />;
-const Norman = <StaticImage alt="Norman" src="../../images/Will.webp" {...SHARED_PROPS} />;
 const Shannon = <StaticImage alt="Shannon" src="../../images/Shannon.webp" {...SHARED_PROPS} />;
 const Sarah = <StaticImage alt="Sarah" src="../../images/Sarah.webp" {...SHARED_PROPS} />;
+const Will = <StaticImage alt="Will" src="../../images/Will.webp" {...SHARED_PROPS} />;
 
 const BrideAndGroomContainer = styled.div`
   display: grid;
@@ -104,9 +104,9 @@ export default function About() {
           name="Jordan Barrett"
         />
         <FlipCard
-          image={Norman}
+          image={Will}
           memory="Staying at Disney with Jordan for the first time"
-          name="Norman Swanson"
+          name="Will Swanson"
         />
         <FlipCard
           image={Kelly}
