@@ -3,9 +3,9 @@ import styled from 'styled-components';
 
 import Accommodations from './Accommodations';
 import Activities from './Activities';
+import Grid, { GridItem } from './Grid';
 import HorizontalRule from '../HorizontalRule';
 import Link from './Link';
-import Grid from './Grid';
 
 const Airport = styled.h5`
   @media (min-width: 1080px) {
@@ -34,7 +34,7 @@ export default function Travel() {
       <HorizontalRule />
       <h4>Travel</h4>
       <Grid columns={2}>
-        <div>
+        <GridItem>
           <Airport>Orlando (MCO)</Airport>
           <p className="body1">
             For our out of town guests, the Orlando International Airport (MCO) is the closest
@@ -53,8 +53,8 @@ export default function Travel() {
             />
             .
           </p>
-        </div>
-        <div>
+        </GridItem>
+        <GridItem>
           <Airport>Other Airports</Airport>
           <p className="body1">
             Other nearby airports include the Orlando Sanford International Airport (SFB)
@@ -69,7 +69,7 @@ export default function Travel() {
             {' '}
             from Lorton, VA to Sanford, FL.
           </p>
-        </div>
+        </GridItem>
       </Grid>
       <HorizontalRule />
       <Accommodations />

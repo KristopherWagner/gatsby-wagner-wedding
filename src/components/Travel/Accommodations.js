@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Grid from './Grid';
+import Grid, { GridItem } from './Grid';
 import Link from './Link';
 
 export default function Accommodations() {
@@ -18,8 +18,8 @@ export default function Accommodations() {
         />
         {' within the Walt Disney World Resort.'}
       </p>
-      <Grid>
-        <div>
+      <Grid columns={2}>
+        <GridItem>
           <h5>Book directly through WDW</h5>
           <p className="subtitle1">
             <Link
@@ -31,15 +31,8 @@ export default function Accommodations() {
             This option allows you to review all 31 resort options available and book directly.
             Prices may fluctuate depending on seasonality and sales
           </p>
-        </div>
-        <div>
-          <h5>Book using a Travel Agent</h5>
-          <p className="body1">
-            Free service that handles all of your vacation planning in one spot (hotel,
-            park tickets, dining reservations, etc.) Easy, hands-off booking process
-          </p>
-        </div>
-        <div>
+        </GridItem>
+        <GridItem>
           <h5>Purchase DVC rental points</h5>
           <p className="body1">
             <Link
@@ -52,7 +45,14 @@ export default function Accommodations() {
             through Walt Disney World. Booking requests can be submitted up to 11-months
             in advance, but booking is not guaranteed when the request is submitted.
           </p>
-        </div>
+        </GridItem>
+        <GridItem>
+          <h5>Book using a Travel Agent</h5>
+          <p className="body1">
+            Free service that handles all of your vacation planning in one spot (hotel,
+            park tickets, dining reservations, etc.) Easy, hands-off booking process
+          </p>
+        </GridItem>
       </Grid>
     </>
   );

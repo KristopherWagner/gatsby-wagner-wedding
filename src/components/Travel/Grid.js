@@ -6,9 +6,15 @@ const StyledGrid = styled.div`
   @media (min-width: 1080px) {
     display: grid;
     grid-template-columns: ${(props) => (
-    props.columns === 3 ? '33% 33% 33%' : '50% 50%')};
+    props.columns === 3 ? '1fr 1fr 1fr' : '1fr 1fr')};
   }
 `;
+
+const GridItem = styled.div`
+  padding: 8px;
+  margin: 8px;
+`;
+export { GridItem };
 
 export default function Grid(props) {
   const { children, columns } = props;
