@@ -1,17 +1,9 @@
 import React from 'react';
-import styled from 'styled-components';
 
 import Accommodations from './Accommodations';
 import Activities from './Activities';
-import Grid, { GridItem } from './Grid';
 import HorizontalRule from '../HorizontalRule';
 import Link from './Link';
-
-const Airport = styled.h5`
-  @media (min-width: 1080px) {
-    margin-top: 0px;
-  }
-`;
 
 export default function Travel() {
   return (
@@ -33,44 +25,38 @@ export default function Travel() {
       </p>
       <HorizontalRule />
       <h4>Travel</h4>
-      <Grid columns={2}>
-        <GridItem>
-          <Airport>Orlando (MCO)</Airport>
-          <p className="body1">
-            For our out of town guests, the Orlando International Airport (MCO) is the closest
-            airport and provides several transportation options to the Walt Disney World Resort.
-            If you choose to fly into MCO and are staying at a WDW Resort hotel,
-            you can choose to book transportation direct to your hotel through
-            {' '}
-            <Link
-              href="https://www.mearsconnect.com/?AspxAutoDetectCookieSupport=1"
-              text="Mears Connect"
-            />
-            {' or '}
-            <Link
-              href="https://sunshineflyer.com/?gclid=CjwKCAjwrNmWBhA4EiwAHbjEQIiT6zREtLgWfB-D2zHofMaAqNLMC3_6_5L-XpLcFISs9Cc1YhlJGBoC8ogQAvD_BwE"
-              text="The Sunshine Flyer"
-            />
-            .
-          </p>
-        </GridItem>
-        <GridItem>
-          <Airport>Other Airports</Airport>
-          <p className="body1">
-            Other nearby airports include the Orlando Sanford International Airport (SFB)
-            and Tampa International Airport (TPA), however these are further away and will
-            require a rental car or taxi. Prefer to travel by train? You can bring your car on
-            the
-            {' '}
-            <Link
-              href="https://www.amtrak.com/auto-train"
-              text="Amtrack Autotrain"
-            />
-            {' '}
-            from Lorton, VA to Sanford, FL.
-          </p>
-        </GridItem>
-      </Grid>
+      <h5>Orlando (MCO)</h5>
+      <p className="body1">
+        For our out of town guests, the Orlando International Airport (MCO) is the closest
+        airport and provides several transportation options to the Walt Disney World Resort.
+        If you choose to fly into MCO and are staying at a WDW Resort hotel,
+        you can choose to book transportation direct to your hotel through
+        {' '}
+        <Link
+          href="https://www.mearsconnect.com/?AspxAutoDetectCookieSupport=1"
+          text="Mears Connect"
+        />
+        {' or '}
+        <Link
+          href="https://sunshineflyer.com/?gclid=CjwKCAjwrNmWBhA4EiwAHbjEQIiT6zREtLgWfB-D2zHofMaAqNLMC3_6_5L-XpLcFISs9Cc1YhlJGBoC8ogQAvD_BwE"
+          text="The Sunshine Flyer"
+        />
+        .
+      </p>
+      <h5>Other Airports</h5>
+      <p className="body1">
+        Other nearby airports include the Orlando Sanford International Airport (SFB)
+        and Tampa International Airport (TPA), however these are further away and will
+        require a rental car or taxi. Prefer to travel by train? You can bring your car on
+        the
+        {' '}
+        <Link
+          href="https://www.amtrak.com/auto-train"
+          text="Amtrack Autotrain"
+        />
+        {' '}
+        from Lorton, VA to Sanford, FL.
+      </p>
       <HorizontalRule />
       <Accommodations />
       <HorizontalRule />

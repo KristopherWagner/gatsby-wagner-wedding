@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
+// TODO fix the hover color
 import { BACKGROUND_LIGHT_TEXT, PRIMARY_CONTAINER_TEXT } from '../Colors';
 
 const StyledLink = styled.a`
