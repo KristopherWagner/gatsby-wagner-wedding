@@ -1,24 +1,8 @@
 import React from 'react';
-import styled from 'styled-components';
 
 import { PRIMARY_CONTAINER_TEXT } from '../Colors';
 import HorizontalRule from '../HorizontalRule';
 import ScheduleItem from './ScheduleItem';
-
-const Heading = styled.h4`
-  font-family: "Montserrat", serif;
-  margin: auto 0;
-`;
-
-const Grid = styled.div`
-  display: grid;
-  display: grid;
-  grid-template-columns: 1fr;
-
-  @media (min-width: 1080px) {
-    grid-template-columns: 1fr 2fr 2fr;
-  }
-`;
 
 export default function Schedule() {
   return (
@@ -28,41 +12,35 @@ export default function Schedule() {
         Check back later for more details
       </p>
       <HorizontalRule color={PRIMARY_CONTAINER_TEXT} />
-      <Grid>
-        <Heading>Thursday</Heading>
-        <ScheduleItem
-          name="Rehearsal Dinner"
-          when="TBD"
-          where="TBD"
-          who="All guests (optional)"
-        />
-      </Grid>
+      <h4 className="Montserray">Thursday</h4>
+      <ScheduleItem
+        name="Rehearsal Dinner"
+        when="TBD"
+        where="TBD"
+        who="All guests (optional)"
+      />
       <HorizontalRule color={PRIMARY_CONTAINER_TEXT} />
-      <Grid>
-        <Heading>Friday</Heading>
-        <ScheduleItem
-          dress="Cocktail attire"
-          name="Ceremony"
-          when="7:30pm - 8:00pm"
-          where="Disney's Wedding Pavilion"
-        />
-        <ScheduleItem
-          dress="Cocktail attire"
-          name="Reception"
-          when="8:30pm - 1:30am"
-          where="Italy Isola, EPCOT"
-        />
-      </Grid>
+      <h4 className="Montserray">Friday</h4>
+      <ScheduleItem
+        dress="Cocktail attire"
+        name="Ceremony"
+        when="7:30pm - 8:00pm"
+        where="Disney's Wedding Pavilion"
+      />
+      <ScheduleItem
+        dress="Cocktail attire"
+        name="Reception"
+        when="8:30pm - 1:30am"
+        where="Italy Isola, EPCOT"
+      />
       <HorizontalRule color={PRIMARY_CONTAINER_TEXT} />
-      <Grid>
-        <Heading>Sunday</Heading>
-        <ScheduleItem
-          name="Park day"
-          when="11:00am"
-          where="EPCOT"
-          who="All guests (optional)"
-        />
-      </Grid>
+      <h4 className="Montserray">Sunday</h4>
+      <ScheduleItem
+        name="Park day"
+        when="11:00am"
+        where="EPCOT"
+        who="All guests (optional)"
+      />
     </>
   );
 }
