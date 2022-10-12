@@ -19,34 +19,38 @@ import {
   Travel,
 } from '../components';
 
-import Christmas from '../images/christmas.webp';
-import ClimateSimulator from '../images/climate_simulator.webp';
-import SpaceMountain from '../images/space_mountain.webp';
+import BridgeKissing from '../images/bridge_kissing.webp';
+import PlazaWalking from '../images/plaza_walking.webp';
 import StarlightLounge from '../images/starlight_lounge.webp';
+import WheelFarAway from '../images/wheel_far_away.webp';
+import WheelStanding from '../images/wheel_standing.webp';
+import WheelWalking from '../images/wheel_walking.webp';
 
 export default function IndexPage() {
   return (
     <>
       <Navigation />
-      <Parallax url={StarlightLounge} />
+      <Parallax aspectRatio="5000/3293" url={WheelFarAway} />
       <Section anchor="details" variant="light">
         <EventDetails />
       </Section>
-      <Parallax url={ClimateSimulator} />
+      <Parallax aspectRatio="2309/1536" url={StarlightLounge} />
       <Section anchor="travel" variant="primary">
         <Travel />
       </Section>
-      <Parallax url={Christmas} />
+      <Parallax aspectRatio="5000/3327" url={WheelStanding} />
       <Section anchor="covid" variant="light">
         <Covid />
       </Section>
-      <Parallax url={SpaceMountain} />
+      <Parallax aspectRatio="5000/3327" url={PlazaWalking} />
       <Section anchor="about" variant="secondary">
         <About />
       </Section>
+      <Parallax aspectRatio="5000/3507" url={BridgeKissing} />
       <Section anchor="schedule" variant="primary">
         <Schedule />
       </Section>
+      <Parallax aspectRatio="5000/3271" url={WheelWalking} />
     </>
   );
 }
