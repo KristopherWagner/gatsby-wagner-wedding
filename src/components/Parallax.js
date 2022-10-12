@@ -3,7 +3,7 @@ import propTypes from 'prop-types';
 import styled from 'styled-components';
 
 const ParallaxDiv = styled.div`
-    aspect-ratio: 2309/1536;
+    aspect-ratio: ${(props) => props.aspectRatio};
     background-attachment: scroll;
     background-image: ${(props) => `url(${props.url})`};
     background-position-y: 0;
@@ -18,10 +18,11 @@ const ParallaxDiv = styled.div`
     }
 `;
 
-export default function Parallax({ url }) {
-  return <ParallaxDiv url={url} />;
+export default function Parallax({ aspectRatio, url }) {
+  return <ParallaxDiv aspectRatio={aspectRatio} url={url} />;
 }
 
 Parallax.propTypes = {
+  aspectRatio: propTypes.string.isRequired,
   url: propTypes.string.isRequired,
 };
