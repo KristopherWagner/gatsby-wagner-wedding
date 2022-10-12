@@ -18,7 +18,7 @@ module.exports = {
         start_url: '/',
         background_color: '#663399',
         display: 'minimal-ui',
-        icon: 'src/images/bells.svg',
+        icon: 'src/images/icon.webp',
       },
     },
     {
