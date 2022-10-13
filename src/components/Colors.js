@@ -2,8 +2,8 @@ export const PRIMARY = '#286C2A';
 export const PRIMARY_TEXT = '#FFFFFF';
 export const SECONDARY = '#984062';
 
-export const PRIMARY_CONTAINER = '#B9E4C9';
-export const PRIMARY_CONTAINER_TEXT = '#002203';
+export const PRIMARY_CONTAINER = '#D0E8D7';
+export const PRIMARY_CONTAINER_TEXT = '#0B1F15';
 
 export const SECONDARY_CONTAINER = '#FEEAE6';
 export const SECONDARY_CONTAINER_TEXT = '#3E001E';
