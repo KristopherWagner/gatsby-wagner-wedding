@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 // TODO fix the hover color
-import { BACKGROUND_LIGHT_TEXT, PRIMARY_CONTAINER_TEXT } from '../Colors';
+import { PRIMARY_CONTAINER_TEXT, SECONDARY } from '../Colors';
 
 const StyledLink = styled.a`
     color: ${PRIMARY_CONTAINER_TEXT};
@@ -11,7 +11,7 @@ const StyledLink = styled.a`
     text-decoration-line: underline;
 
     &:hover {
-        color: ${BACKGROUND_LIGHT_TEXT};
+        color: ${SECONDARY};
     }
 `;
 
