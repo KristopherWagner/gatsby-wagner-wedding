@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Link from './Link';
+import Link from '../Link';
 
 const List = styled.ul`
     list-style-type: none;

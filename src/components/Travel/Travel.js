@@ -3,7 +3,7 @@ import React from 'react';
 import Accommodations from './Accommodations';
 import Activities from './Activities';
 import HorizontalRule from '../HorizontalRule';
-import Link from './Link';
+import Link from '../Link';
 
 export default function Travel() {
   return (
