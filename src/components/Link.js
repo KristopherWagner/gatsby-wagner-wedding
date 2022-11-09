@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 // TODO fix the hover color
-import { PRIMARY_CONTAINER_TEXT, SECONDARY } from '../Colors';
+import { PRIMARY_CONTAINER_TEXT, SECONDARY } from './Colors';
 
 const StyledLink = styled.a`
     color: ${PRIMARY_CONTAINER_TEXT};
