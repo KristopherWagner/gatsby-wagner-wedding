@@ -12,6 +12,7 @@ import {
   About,
   Covid,
   EventDetails,
+  FAQ,
   Navigation,
   Parallax,
   Section,
@@ -66,6 +67,9 @@ export default function IndexPage() {
       </Section>
       <Parallax aspectRatio="5000/3271" url={WheelWalking} />
       <Parallax aspectRatio="2787/4270" mobile url={EskimoKisses} />
+      <Section anchor="faq" variant="light">
+        <FAQ />
+      </Section>
     </>
   );
 }
