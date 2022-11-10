@@ -122,6 +122,13 @@ export default function Navigation() {
           >
             Schedule
           </Link>
+          <Link
+            aria-label="Go to the frequently asked questions"
+            href="/#faq"
+            onClick={closeOverlay}
+          >
+            FAQ
+          </Link>
         </OverlayContent>
       </Overlay>
     </>
