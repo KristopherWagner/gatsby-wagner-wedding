@@ -96,7 +96,7 @@ export default function Navigation() {
           </Link>
           <Link
             aria-label="Go to travel details"
-            href="#travel"
+            href="/#travel"
             onClick={closeOverlay}
           >
             Travel/Accommodations
