@@ -22,6 +22,11 @@ export default function FAQ() {
         {' '}
         or a similar service. We appreciate your understanding.
       </p>
+      <h5><em>Can I use my phone to take pictures during the ceremony?</em></h5>
+      <p className="body1">
+        No, we have chosen to have an unplugged ceremony and have hired professionals to photograph,
+        record, and live stream our ceremony. Please respect our wishes by turning off your phone.
+      </p>
       <h5><em>Do I need to stay at a Disney-owned hotel?</em></h5>
       <p className="body1">
         {'No, but there are '}
@@ -42,6 +47,12 @@ export default function FAQ() {
           text="email the groom"
         />
         {' for assistance.'}
+      </p>
+      <h5><em>Do I need a theme park ticket for any of the events?</em></h5>
+      <p className="body1">
+        You do not need a theme park ticket to attend the rehearsal dinner, ceremony, or reception.
+        If you choose to celebrate with us on Sunday at EPCOT, you will need to purchase a ticket
+        to enter the park.
       </p>
     </>
   );
