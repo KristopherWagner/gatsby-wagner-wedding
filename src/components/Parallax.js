@@ -3,9 +3,11 @@ import React from 'react';
 import propTypes from 'prop-types';
 import styled from 'styled-components';
 
+import { useProgressiveImage } from '../hooks';
+
 const ParallaxDiv = styled.div`
     aspect-ratio: ${(props) => props.aspectRatio};
-    background-image: ${(props) => `url(${props.url})`};
+    background-image: ${(props) => `url(${props.src || ''})`};
     background-repeat: no-repeat;
 `;
 
@@ -33,11 +35,12 @@ const MobileVersion = styled(ParallaxDiv)`
     }
 `;
 
-export default function Parallax({ mobile, ...rest }) {
+export default function Parallax({ mobile, url, ...rest }) {
+  const imgSrc = useProgressiveImage(url);
   return !mobile ? (
-    <DesktopVersion {...rest} />
+    <DesktopVersion src={imgSrc} {...rest} />
   ) : (
-    <MobileVersion {...rest} />
+    <MobileVersion src={imgSrc} {...rest} />
   );
 }
 
