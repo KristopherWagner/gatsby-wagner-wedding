@@ -26,12 +26,14 @@ export default function Schedule() {
         name="Ceremony"
         when="7:30pm - 8:00pm"
         where="Disney's Wedding Pavilion"
+        who="All adult guests"
       />
       <ScheduleItem
         dress="Cocktail attire"
         name="Reception"
         when="8:30pm - 1:30am"
         where="Italy Isola, EPCOT"
+        who="All adult guests"
       />
       <HorizontalRule color={PRIMARY_CONTAINER_TEXT} />
       <h4 className="Montserray">Sunday</h4>
