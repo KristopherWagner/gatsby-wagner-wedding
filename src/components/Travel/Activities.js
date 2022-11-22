@@ -37,11 +37,11 @@ export default function Activities() {
       </List>
       <List>
         <Bold>Animal Kingdom</Bold>
-        <li className="body2">Satu&apos;li Canteen, Disney&apos;s Animal Kingdom</li>
+        <li className="body2">Satu&apos;li Canteen</li>
       </List>
       <List>
         <Bold>Disney Springs</Bold>
-        <li className="body2">City Works Eatery & Pour House, Disney Springs</li>
+        <li className="body2">City Works Eatery & Pour House</li>
       </List>
       <h5 className="montserrat">
         <i className="fa-duotone fa-beer-mug" />
