@@ -46,7 +46,7 @@ export default function Activities() {
         </li>
       </List>
       <List>
-        <Bold>Animal Kingdom</Bold>
+        <Bold>Disney&apos;s Animal Kingdom</Bold>
         <li className="body2">
           <Link
             href="https://disneyworld.disney.go.com/dining/animal-kingdom/satuli-canteen/"
@@ -95,7 +95,7 @@ export default function Activities() {
         </li>
       </List>
       <List>
-        <Bold>The Polynesian Village Resort</Bold>
+        <Bold>Disney&apos;s Polynesian Village Resort</Bold>
         <li className="body2">
           <Link
             href="https://disneyworld.disney.go.com/dining/polynesian-resort/trader-sams-grog-grotto/"
@@ -142,10 +142,10 @@ export default function Activities() {
       </h5>
       <List>
         <li className="body1">EPCOT</li>
-        <li className="body1">The Magic Kingdom</li>
+        <li className="body1">Magic Kingdom</li>
         <li className="body1">Disney&apos;s Hollywood Studios</li>
         <li className="body1">Disney&apos;s Animal Kingdom</li>
-        <li className="body1">Typhoon Lagoon</li>
+        <li className="body1">Disney&apos;s Typhoon Lagoon Water Park</li>
         <li className="body1">Disney Springs</li>
       </List>
     </>
