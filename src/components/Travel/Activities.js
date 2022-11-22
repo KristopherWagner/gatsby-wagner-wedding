@@ -32,16 +32,36 @@ export default function Activities() {
       </h5>
       <List>
         <Bold>EPCOT</Bold>
-        <li className="body2">Teppan Edo</li>
-        <li className="body2">International Flower & Garden Festival</li>
+        <li className="body2">
+          <Link
+            href="https://disneyworld.disney.go.com/dining/epcot/teppan-edo/"
+            text="Teppan Edo"
+          />
+        </li>
+        <li className="body2">
+          <Link
+            href="https://disneyworld.disney.go.com/events-tours/epcot/epcot-international-flower-and-garden-festival/"
+            text="International Flower & Garden Festival"
+          />
+        </li>
       </List>
       <List>
         <Bold>Animal Kingdom</Bold>
-        <li className="body2">Satu&apos;li Canteen</li>
+        <li className="body2">
+          <Link
+            href="https://disneyworld.disney.go.com/dining/animal-kingdom/satuli-canteen/"
+            text="Satu'li Canteen"
+          />
+        </li>
       </List>
       <List>
         <Bold>Disney Springs</Bold>
-        <li className="body2">City Works Eatery & Pour House</li>
+        <li className="body2">
+          <Link
+            href="https://disneyworld.disney.go.com/dining/disney-springs/city-works/"
+            text="City Works Eatery & Pour House"
+          />
+        </li>
       </List>
       <h5 className="montserrat">
         <i className="fa-duotone fa-beer-mug" />
