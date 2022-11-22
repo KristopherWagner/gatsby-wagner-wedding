@@ -55,11 +55,29 @@ export default function Activities() {
         </li>
       </List>
       <List>
+        <Bold>Disney&apos;s Hollywood Studios</Bold>
+        <li className="body2">
+          <Link
+            href="https://disneyworld.disney.go.com/dining/hollywood-studios/docking-bay-7-food-and-cargo/"
+            text="Docking Bay 7"
+          />
+        </li>
+      </List>
+      <List>
         <Bold>Disney Springs</Bold>
         <li className="body2">
           <Link
             href="https://disneyworld.disney.go.com/dining/disney-springs/city-works/"
             text="City Works Eatery & Pour House"
+          />
+        </li>
+      </List>
+      <List>
+        <Bold>Disney&apos;s Wilderness Lodge</Bold>
+        <li className="body2">
+          <Link
+            href="https://disneyworld.disney.go.com/dining/wilderness-lodge-resort/whispering-canyon-cafe/"
+            text="Whispering Canyon Cafe"
           />
         </li>
       </List>
