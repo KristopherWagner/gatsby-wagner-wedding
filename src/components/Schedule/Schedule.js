@@ -15,8 +15,8 @@ export default function Schedule() {
       <h4 className="Montserray">Thursday</h4>
       <ScheduleItem
         name="Rehearsal Dinner"
-        when="TBD"
-        where="TBD"
+        when="7:00pm - 9:00pm"
+        where="Fantasmic! Disney's Hollywood Studios"
         who="All guests (optional)"
       />
       <HorizontalRule color={PRIMARY_CONTAINER_TEXT} />
