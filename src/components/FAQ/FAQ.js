@@ -6,6 +6,7 @@ import HorizontalRule from '../HorizontalRule';
 import Children from './Children';
 import Hotel from './Hotel';
 import Phones from './Phones';
+import Registry from './Registry';
 import Tickets from './Tickets';
 
 export default function FAQ() {
@@ -17,6 +18,7 @@ export default function FAQ() {
       <Phones />
       <Hotel />
       <Tickets />
+      <Registry />
     </>
   );
 }
