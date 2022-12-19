@@ -8,9 +8,6 @@ export default function Schedule() {
   return (
     <>
       <h3>Schedule of Events</h3>
-      <p className="subtitle2">
-        Check back later for more details
-      </p>
       <HorizontalRule color={PRIMARY_CONTAINER_TEXT} />
       <h4 className="Montserray">Thursday</h4>
       <ScheduleItem
