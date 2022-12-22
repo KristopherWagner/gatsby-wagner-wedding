@@ -11,6 +11,7 @@ export default function Schedule() {
       <HorizontalRule color={PRIMARY_CONTAINER_TEXT} />
       <h4 className="Montserray">Thursday</h4>
       <ScheduleItem
+        dress="Smart casual"
         name="Rehearsal Dinner"
         when="7:00pm - 9:00pm"
         where="Fantasmic! Disney's Hollywood Studios"
