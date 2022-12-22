@@ -49,31 +49,18 @@ export default function Registry() {
         We have decided to not have a registry; we understand that attending our wedding is
         expensive, and your presence is the best gift. However, if you wish to give, we will
         gratefully accept a small contribution towards our honeymoon, next home, or joining
-        Disney&apos;s Vacation Club. Although unnecessary, you can bring cash or a check to the
-        reception or
-        {' '}
-        <Link
-          href="mailto:kmwagner91@gmail.com"
-          text="email the groom"
-        />
-        {'  for information on Venmo, PayPal, or Zelle.'}
-      </p>
-      <p className="body1">
-        Alternatively, we would also be honored if you would consider making a donation to one of
-        our favorite charities in lieu of a traditional wedding gift.
+        Disney&apos;s Vacation Club. Alternatively, we would be honored if you would consider
+        making a donation to one of our favorite charities in lieu of a traditional wedding gift.
         {' '}
         <BatCon />
         {', '}
         <MauiNui />
         {', and '}
         <Lubee />
-        {' '}
-        are organizations that are close to our hearts and we believe in their missions to make a
-        positive impact in the world. You could also purchase
-        {' '}
+        {' are organizations that are close to our hearts and we believe in their missions.'}
+        {' You could also purchase '}
         <CarbonOffsets />
-        {' '}
-        for your travel to help us with our goal of having a carbon neutral wedding.
+        {' for your travel to help us with our goal of having a carbon neutral wedding.'}
       </p>
     </>
   );
