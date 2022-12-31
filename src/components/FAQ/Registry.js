@@ -12,6 +12,15 @@ function BatCon() {
   );
 }
 
+function EveryCat() {
+  return (
+    <Link
+      href="https://everycat.salsalabs.org/main-donation-form/index.html"
+      text="EveryCat Health Foundation"
+    />
+  );
+}
+
 function Lubee() {
   return (
     <Link
@@ -53,6 +62,8 @@ export default function Registry() {
         making a donation to one of our favorite charities in lieu of a traditional wedding gift.
         {' '}
         <BatCon />
+        {', '}
+        <EveryCat />
         {', '}
         <MauiNui />
         {', and '}
