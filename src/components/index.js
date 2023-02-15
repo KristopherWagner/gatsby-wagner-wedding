@@ -1,7 +1,9 @@
 export { default as About } from './About';
+export { default as ButtonGroup, Button } from './ButtonGroup';
 export { default as Covid } from './Covid';
 export { default as EventDetails } from './EventDetails';
 export { default as FAQ } from './FAQ';
+export { default as HorizontalRule } from './HorizontalRule';
 export { default as Navigation } from './Navigation';
 export { default as Parallax } from './Parallax';
 export { default as Section } from './Section';
