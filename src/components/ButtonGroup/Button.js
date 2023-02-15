@@ -16,10 +16,25 @@ const StyledButton = styled.button`
 `;
 
 export default function Button(props) {
-  const { children } = props;
-  return <StyledButton className="button" type="button">{children}</StyledButton>;
+  const { children, onClick, selected } = props;
+  return (
+    <StyledButton
+      className="button"
+      onClick={onClick}
+      selected={selected}
+      type="button"
+    >
+      {children}
+    </StyledButton>
+  );
 }
 
 Button.propTypes = {
   children: PropTypes.node.isRequired,
+  onClick: PropTypes.func.isRequired,
+  selected: PropTypes.bool,
+};
+
+Button.defaultProps = {
+  selected: false,
 };
