@@ -2,9 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { PRIMARY } from '../Colors';
+import Link from '../Link';
 
 const Icon = styled.i`
   color: ${PRIMARY};
+`;
+
+const Youtube = styled.i`
+  color: red;
 `;
 
 export default function Event() {
@@ -25,6 +30,16 @@ export default function Event() {
         7:30pm
         <br />
         The Wedding Pavilion at Disney&apos;s Grand Floridian Resort and Spa
+        <br />
+        <Link
+          href="https://www.youtube.com/watch?v=Rpf97t6mcIg"
+          text={<Youtube className="fa-brands fa-youtube" />}
+        />
+        {' '}
+        <Link
+          href="https://www.youtube.com/watch?v=Rpf97t6mcIg"
+          text={<strong>Click here to watch it live</strong>}
+        />
       </p>
       <h4 className="montserrat">
         <Icon className="fa-duotone fa-champagne-glasses" />

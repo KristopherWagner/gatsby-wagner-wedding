@@ -47,11 +47,25 @@ export default function Covid() {
         {' for wearing masks while traveling. '}
       </p>
       <h4>
-        <Youtube className="fa-brands fa-youtube" />
+        <Link
+          href="https://www.youtube.com/watch?v=Rpf97t6mcIg"
+          text={<Youtube className="fa-brands fa-youtube" />}
+        />
         {' Live Stream'}
       </h4>
       <p className="body1">
-        We will provide a live stream of our ceremony for anyone unable to attend in person.
+        If you cannot attend, you can watch a livestream of our wedding by clicking
+        {' '}
+        <Link
+          href="https://www.youtube.com/watch?v=Rpf97t6mcIg"
+          text="here"
+        />
+        . If for any reason that link does not work,
+        {' our videographers have provided a backup link '}
+        <Link
+          href="https://www.youtube.com/watch?v=Uw75O0ntR3k"
+          text="here"
+        />
       </p>
     </>
   );
