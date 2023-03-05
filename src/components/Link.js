@@ -16,9 +16,10 @@ const StyledLink = styled.a`
 `;
 
 export default function Link(props) {
-  const { href, text } = props;
+  const { ariaLabel, href, text } = props;
   return (
     <StyledLink
+      aria-label={ariaLabel}
       href={href}
       rel="noreferrer"
       target="_blank"
@@ -29,6 +30,11 @@ export default function Link(props) {
 }
 
 Link.propTypes = {
+  ariaLabel: PropTypes.string,
   href: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
+};
+
+Link.defaultProps = {
+  ariaLabel: undefined,
 };
