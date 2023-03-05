@@ -9,7 +9,7 @@ const Heading = styled.h5`
 
 export default function ScheduleItem(props) {
   const {
-    dress, name, when, where, who,
+    dress, name, note, when, where, who,
   } = props;
 
   return (
@@ -23,6 +23,8 @@ export default function ScheduleItem(props) {
         {where && `Where: ${where}`}
         {where && <br />}
         {dress && `Dress: ${dress}`}
+        {note && <br />}
+        {note}
       </p>
     </>
   );
@@ -31,6 +33,7 @@ export default function ScheduleItem(props) {
 ScheduleItem.propTypes = {
   dress: PropTypes.string,
   name: PropTypes.string.isRequired,
+  note: PropTypes.string,
   when: PropTypes.string,
   where: PropTypes.string,
   who: PropTypes.string,
@@ -38,6 +41,7 @@ ScheduleItem.propTypes = {
 
 ScheduleItem.defaultProps = {
   dress: undefined,
+  note: undefined,
   when: undefined,
   where: undefined,
   who: undefined,
