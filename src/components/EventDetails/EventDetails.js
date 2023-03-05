@@ -32,6 +32,7 @@ export default function Event() {
         The Wedding Pavilion at Disney&apos;s Grand Floridian Resort and Spa
         <br />
         <Link
+          ariaLabel="Go to YouTube video"
           href="https://www.youtube.com/watch?v=Rpf97t6mcIg"
           text={<Youtube className="fa-brands fa-youtube" />}
         />
