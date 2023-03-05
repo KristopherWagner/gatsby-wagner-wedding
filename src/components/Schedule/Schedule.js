@@ -16,6 +16,9 @@ export default function Schedule() {
         when="7:00pm - 9:00pm"
         where="Fantasmic! Disney's Hollywood Studios"
         who="All guests (optional)"
+        note={(
+          <strong>Please meet at the entrance to Disney&apos;s Hollywood Studios at 6:30pm</strong>
+        )}
       />
       <HorizontalRule color={PRIMARY_CONTAINER_TEXT} />
       <h4 className="Montserray">Friday</h4>
