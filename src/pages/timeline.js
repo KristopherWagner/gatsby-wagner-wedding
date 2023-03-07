@@ -44,7 +44,7 @@ const FRIDAY_EVENTS = [{
 }, {
   name: 'Getting ready',
   location: 'Disney\'s Grand Floridian Resort and Spa',
-  time: '3:30pm - 5:00pm',
+  time: '3:00pm - 5:00pm',
   roles: ['GROOM', 'GROOMSMAN'],
   note: 'Text the groom for room number',
 }, {
