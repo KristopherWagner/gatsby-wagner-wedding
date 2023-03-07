@@ -34,7 +34,6 @@ const FRIDAY_EVENTS = [{
   name: 'Morning Run',
   location: 'Disney\'s Grand Floridian Resort and Spa',
   time: '8:30am - 10:00am',
-  note: 'Optional: Running around the Seven Seas Lagoon',
   roles: ['BRIDE', 'GROOM'],
 }, {
   name: 'Hair & Makeup',
@@ -44,35 +43,64 @@ const FRIDAY_EVENTS = [{
   roles: ['BRIDE', 'GROOM', 'BRIDAL ATTENDANTS', 'MOTHER OF THE BRIDE'],
 }, {
   name: 'Getting ready',
-  location: 'Disney\'s Saratoga Springs and Spa',
-  time: '1:30pm - 3:30pm',
+  location: 'Disney\'s Grand Floridian Resort and Spa',
+  time: '3:30pm - 5:00pm',
   roles: ['GROOM', 'GROOMSMAN'],
   note: 'Text the groom for room number',
 }, {
-  name: 'First look',
+  name: 'Getting ready photos',
   location: 'Disney\'s Grand Floridian Resort and Spa',
-  time: '4:30pm',
+  time: '5:00pm - 5:25pm',
+  roles: ['GROOM', 'GROOMSMAN'],
+}, {
+  name: 'Groomal Photos',
+  location: 'Disney\'s Grand Floridian Resort and Spa',
+  time: '5:30pm - 5:45pm',
+  roles: ['GROOM', 'GROOMSMAN', 'PARENT OF THE GROOM'],
+}, {
+  name: 'Getting ready photos',
+  location: 'Disney\'s Grand Floridian Resort and Spa',
+  time: '4:30pm - 5:20pm',
+  roles: ['BRIDE', 'BRIDAL ATTENDANTS', 'MOTHER OF THE BRIDE'],
+}, {
+  name: 'First look with dad',
+  location: 'Disney\'s Grand Floridian Resort and Spa',
+  time: '5:20pm - 5:25pm',
+  roles: ['BRIDE', 'FATHER OF THE BRIDE'],
+}, {
+  name: 'Bridal photos',
+  location: 'Disney\'s Grand Floridian Resort and Spa',
+  time: '5:30pm - 6:00pm',
+  roles: ['BRIDE', 'BRIDAL ATTENDANTS', 'MOTHER OF THE BRIDE', 'FATHER OF THE BRIDE'],
+}, {
+  name: 'First look',
+  location: 'Marina at Disney\'s Grand Floridian Resort and Spa',
+  time: '6:00pm - 6:10pm',
   roles: ['BRIDE', 'GROOM'],
 }, {
   name: 'Wedding Party & Family Photos',
   location: 'Disney\'s Grand Floridian Resort and Spa',
-  time: '5:00pm - 7pm',
+  time: '6:15pm - 7:00pm',
   roles: ROLES,
-  note: 'Check back for more details',
+}, {
+  name: 'Picture Point photos',
+  location: 'Picture Point at The Wedding Pavilion at Disney\'s Grand Floridian Resort and Spa',
+  time: '7:00pm - 7:20pm',
+  roles: ['BRIDE', 'GROOM'],
 }, {
   name: 'Ceremony',
   location: 'The Wedding Pavilion at Disney\'s Grand Floridian Resort and Spa',
   time: '7:30pm - 8:00pm',
   roles: ROLES,
 }, {
-  name: 'Post-Ceremony Photos',
-  location: 'The Wedding Pavilion at Disney\'s Grand Floridian Resort and Spa',
-  time: '8:00pm - 8:15pm',
-  roles: ['BRIDE', 'GROOM'],
-}, {
   name: 'Reception',
   location: 'Italy Isola, EPCOT',
   time: '8:30pm - 2:00am',
+  roles: ROLES,
+}, {
+  name: 'Mock exit',
+  location: 'Italy Isola, EPCOT',
+  time: '12:35am',
   roles: ROLES,
 }];
 
