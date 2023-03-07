@@ -63,7 +63,7 @@ const FRIDAY_EVENTS = [{
   time: '4:30pm - 5:20pm',
   roles: ['BRIDE', 'BRIDAL ATTENDANTS', 'MOTHER OF THE BRIDE'],
 }, {
-  name: 'First look with dad',
+  name: 'First look with Dad',
   location: 'Disney\'s Grand Floridian Resort and Spa',
   time: '5:20pm - 5:25pm',
   roles: ['BRIDE', 'FATHER OF THE BRIDE'],
